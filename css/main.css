@@ -6,7 +6,7 @@ body {
     font-size: 16px;
     line-height: 32px;
     font-family: Ubuntu, sans-serif;
-    color: #254063;
+    color: #D53A66;
 }
 h1 {
     font-size: 3.0rem;
@@ -15,7 +15,7 @@ h1 {
 h2 {
     font-size: 2.5rem;
     text-align: center;
-    border-bottom: 1px solid #5A665C;
+    border-bottom: 1px solid #6AAFD7;
 }
 header, main, footer {
     margin: 1.25rem auto;
@@ -24,11 +24,11 @@ header, main, footer {
 }
 header, footer, footer a {
     text-align: center;
-    background-color: #B33364;
+    background-color: #7A1C40;
     color: whitesmoke;
 }
 header img {
-    width: 25px;
+    width: 100px;
     height: auto;
     float: right;
 }
