@@ -3,7 +3,7 @@
 /* * is a wildcard referring to all elements. */
 *  { margin: 0; box-sizing: border-box; }
 body {
-    font-size: 16px;
+    font-size: 14px;
     line-height: 32px;
     font-family: Ubuntu, sans-serif;
     color: #A31568;
