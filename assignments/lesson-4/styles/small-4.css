@@ -1,0 +1,55 @@
+#content { 
+    background-color: #fff
+}
+nav {
+    background-color: #2e4272;  
+}
+  nav a {
+    color: #fff;
+    display: inline-block;
+    text-decoration: none;
+    }
+  nav li {
+    list-style-type: none;
+    font-family: 'Rokkitt', serif;
+    style: none;
+}
+nav a:hover {
+  background-color: #542b72;
+  color: #fff;
+  border-radius: 5px;
+}
+#logo {
+    width: 150px;
+    position: relative;
+    top: 10px;
+    left: 10px;
+}
+.motto {
+    text-align: left;
+    font-family: 'Rokkitt', serif;
+    font-size: 1.25em;
+    style: none;
+    color: #2e4272;
+}
+.sec1 {
+    background-color: #542b72
+}
+.sec2 {
+    background-color: #2a7e43
+}
+.sec3 {
+    background-color: #2e4272
+}
+ 
+h1, h2, h3, h4, h5, h6 {
+    color: #fff;
+    text-align: left;
+    font-family: 'Changa One', cursive;
+}
+h1 {
+    color: #2e4272;
+}
+p {
+    font-family: 'Rokkitt', serif;
+}
