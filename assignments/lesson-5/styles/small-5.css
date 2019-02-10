@@ -1,19 +1,23 @@
 #content { 
     background-color: #fff
 }
-nav {
-    background-color: #2e4272;  
-}
+
   nav a {
     color: #fff;
     display: inline-block;
     text-decoration: none;
+    
     }
+
   nav li {
     list-style-type: none;
     font-family: 'Rokkitt', serif;
     style: none;
-    display: inline;
+    background-color: #2e4272;   
+    
+}
+.menu {
+    color: #2e4272; 
 }
 nav a:hover {
   background-color: #542b72;
@@ -53,4 +57,22 @@ h1 {
 }
 p {
     font-family: 'Rokkitt', serif;
+}
+.active {
+    background-color: #2a7e43
+}
+.top-pic {
+    width: 150px;
+}
+
+
+@media screen and (max-width: 500px) {
+    .menu {
+        display: inline;
+    }
+    .forecast { 
+        display: none;
+
+    }
+
 }
