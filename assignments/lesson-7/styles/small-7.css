@@ -1,0 +1,205 @@
+#content { 
+    background-color: #fdfefd
+}
+h1, h2, h3, h4, h5, h6 {
+    color: #fdfefd;
+    /* text-align: center; */
+    font-family: 'Martel Sans', cursive;
+}
+
+p {
+    font-family: 'Rokkitt', serif;
+    margin: 2%;
+}
+
+.center{
+    text-align: center;
+}
+
+/* -----------header ----------*/
+
+header {
+    padding: .5rem 2%;
+    background-color: #0B4956;
+
+}
+header h1 {
+    color: #fdfefd;
+    margin: 2%;
+    display: flex;
+    justify-content: center;
+   
+}
+.motto {
+    font-family: 'Rokkitt', serif;
+    color: #Bfcc74;
+    display: flex;
+    justify-content: center;
+    
+
+}
+header figure.logo {
+    margin: 0 2% 0 0;
+    display: flex;
+    justify-content: flex-start;
+}
+
+/* ----------navigation ----------*/
+
+nav button {
+      background: transparent;
+      border: none;
+      font-size: 1.6rem;
+      color: #152301
+
+  }
+ 
+nav {
+    background-color: #bfcc74;
+    font-family: 'Rokkitt', serif;
+      
+    }
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;   
+    
+}
+
+nav ul li a {
+    display: block;
+    padding: 1rem;
+    text-decoration: none;
+    color: #152301;
+    border-top:1px solid rgba(0,0,0,0.3);
+    text-align: center;
+
+}
+
+nav ul li a:hover {background-color: rgba(0,0,0,0.4);}
+
+nav ul li .active {background-color: #848a48; color: #fdfefd;}
+.repsonsive li { display: block;}
+
+nav ul.hide {display: none;}
+
+
+.
+
+/* ---------Main----------- */
+main {
+    padding: 0;
+    min-height: 10rem;
+
+}
+
+main h1 {padding: 0 2%;}
+
+main figure.hero {
+    display: block;
+    margin: 0;
+    width: 100%;
+  
+}
+main figure.hero img {width: 100%;}
+
+main figure.article {
+  
+    display: block;
+    margin: 0;
+    width: 100%;
+
+}
+main figure.article img {width: 100%;}
+
+iframe {width: 100%; height: 300px;}
+
+div.row section {padding: 0 2%;}
+
+#weatherSum {
+    background: #152301;
+    color: #Bfcc74;
+    width: 175px;
+    height: 175px;
+    margin: 2em;
+    padding: 1em;
+    position: absolute;
+    left: -15px;
+    top: 35px;
+   
+}
+.sec1 {position: relative;}
+
+#weatherSum h4 {
+    color: #Bfcc74;
+    padding: 0 2%;
+}
+
+
+.sec1 {
+    background-color: #fdfefd;
+}
+.sec1 h1 {
+    color: #152301;
+}
+
+.sec2 {
+    background-color: #Bfcc74;
+    margin: 2%;
+    
+}
+.sec2 h2 {
+    margin: 1em;
+}
+.sec2 h5 { 
+    margin: 1em;
+}
+    
+
+.sec3 { 
+    background-color: #0b4956;
+}
+.sec3 h3 {padding: 1em;}
+
+footer {
+    background-color: #Bfcc74;
+    clear: both;
+}
+ 
+/*----Gallery Page ----*/
+
+#imageContainer {
+    display: grid;
+}
+
+.shadow img {
+    width: 100%;
+    height: auto;
+
+}
+
+
+@media screen and (max-width: 500px) {
+    .forecast { 
+        display: none;
+
+    }
+    .currentConditions {
+        display: none;
+    }
+
+    #imageContainer {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
+/* ----Clearfix: Force an Element not to collapse ----*/
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}  
+
