@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Preston</title>
+    <link href="https://fonts.googleapis.com/css?family=Martel+Sans|Rokkitt" rel="stylesheet">
+    <link href="styles/normalize.css" rel="stylesheet">
+    <link href="styles/small-8.css" rel="stylesheet">
+    <link href="styles/large-8.css" rel="stylesheet">
+    <link href="styles/medium-8.css" rel="stylesheet">
+    <script text="javascript" src="scripts/hamburger.js"></script>
+
+
+</head>
+
+<body>
+
+    <header class="containerHead clearfix">
+        <figure class="logo">
+            <img src="images/logo2-assets/logo2.png" alt="logo" sizes="100vw"
+                srcset="images/logo2-assets/logo2.png 400w, images/logo2-assets/logo3.png 1200w">
+
+        </figure>
+
+        <h1 class="center">Weather in the Wild</h1>
+        <div class="motto">
+            <h2 class="center">We have the weather for your wilderness adventure!</h2>
+        </div>
+        <div class="currentConditions">
+            <h3 class="center">Current Conditions</h3>
+            <div class="center">
+                <span>Current Temperature: </span><span id="temp"></span>
+            </div>
+            <div class="center">
+                <span>Wind Speed: </span><span id="windSpeed"></span>
+            </div>
+            <div class="center">
+                <span>Wind Chill: </span><span id="windChill"></span>
+            </div>
+        </div>
+    </header>
+   
+<nav class="clearfix">
+        <button onclick="toggleMenu()">&#9776;Menu</button>
+        <ul id="primaryNav" class="hide">
+            <li><a href="#">Home</a></li>
+            <li><a href="preston-8.html" >Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="stormcenter.html"class="active">Storm Center</a></li>
+            <li><a href="gallery-8.html">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <main class="thankyou">
+            <h1>Weather Recorded</h1>
+                <p>Thanks for being a weather watcher! Your report will help us track the storms in your area and provide up-to-date information 
+                    for everyone.
+                </p>
+        
+                  
+                
+            </main>
+
+    <section class="sec4">
+            <footer>
+                    <p>
+                        &copy; <span id="updateYear"></span> || Jenni Moody || CIT230
+                        <br>
+                        <span id="currentDay"></span>, <span id="currentDate"></span> <span id="currentMonth"></span>
+                        <span id="currentYear"></span>
+                    </p>
+        
+                </footer>
+            </section>
+            </div>
+            <script src="scripts/currentdate.js"></script>
+            <script src="scripts/windchill.js"></script>
+        </body>
+        
+        </html>

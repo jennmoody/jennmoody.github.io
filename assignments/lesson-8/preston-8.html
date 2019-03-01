@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Preston</title>
+    <link href="https://fonts.googleapis.com/css?family=Martel+Sans|Rokkitt" rel="stylesheet">
+    <link href="styles/normalize.css" rel="stylesheet">
+    <link href="styles/small-8.css" rel="stylesheet">
+    <link href="styles/large-8.css" rel="stylesheet">
+    <link href="styles/medium-8.css" rel="stylesheet">
+    <script text="javascript" src="scripts/hamburger.js"></script>
+
+
+</head>
+
+<body>
+
+    <header class="containerHead clearfix">
+        <figure class="logo">
+            <img src="images/logo2-assets/logo2.png" alt="logo" sizes="100vw"
+                srcset="images/logo2-assets/logo2.png 400w, images/logo2-assets/logo3.png 1200w">
+
+        </figure>
+        <div>
+            <h1 class="center">Weather in the Wild</h1>
+            <h2 class="center">We have the weather for your wilderness adventure!</h2>
+        </div>
+        <div class="currentConditions">
+            <h1 class="center">Current Conditions</h1>
+            <div class="center">
+                <span>Current Temperature: </span><span id="temp"></span>
+            </div>
+            <div class="center">
+                <span>Wind Speed: </span><span id="windSpeed"></span>
+            </div>
+            <div class="center">
+                <span>Wind Chill: </span><span id="windChill"></span>
+            </div>
+        </div>
+    </header>
+
+    <nav class="clearfix">
+        <button onclick="toggleMenu()">&#9776;Menu</button>
+        <ul id="primaryNav" class="hide">
+            <li><a href="#">Home</a></li>
+            <li><a href="preston-8.html" class="active">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="stormcenter.html">Storm Center</a></li>
+            <li><a href="gallery-8.html">Gallery</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="row">
+            <section class="sec1">
+                <h1 class="center">Preston</h1>
+                <figure class="hero">
+                    <img src="images/hero image.jpg" alt="Preston Idaho" sizes="100vw"
+                        srcset="images/hero-400w.jpg 400w, images/hero-1200w.jpg 1200w">
+
+
+                </figure>
+
+                <div class="center" id="weatherSum">
+                    <h1>Weather Summary</h1>
+                    <p>xxxxxxxxxxxxxxxxx<br>
+                        xxxxxxxxxxxxxxxxx<br>
+                        xxxxxxxxxxxxxxxxx<br>
+                        xxxxxxxxxxxxxxxxx<br>
+                    </p>
+                </div>
+
+            </section>
+            <div class="center" class="forecast">
+                <h1>5 Day Forecast</h1>
+            </div>
+
+            <section class="sec2">
+                <h1>Spring is Blooming</h1>
+                <h2>by author</h2>
+                <figure class="article">
+                    <img src="images/blooms.jpg" alt="wildflowers">
+                </figure>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum a tincidunt lacus.
+                    Quisque mollis nibh vel pulvinar eleifend. Maecenas et rhoncus arcu, et dapibus turpis.
+                    Nullam eleifend, sapien vitae sagittis rhoncus, mauris tellus rhoncus felis, sit amet
+                    rutrum mi justo quis ex. Cras vestibulum eget purus eu facilisis. Integer facilisis
+                    dolor nisi, id rutrum lorem facilisis sit amet. Pellentesque scelerisque ante diam.
+                    Ut nec turpis nisl. Etiam nunc libero, vestibulum sed viverra vel, gravida sed sapien.
+                    <br>
+                    <br>
+                    Etiam vulputate placerat diam at hendrerit. Nulla facilisi. Fusce ac neque a sapien
+                    efficitur tristique. Fusce eu diam convallis, hendrerit metus sed, egestas mi. Mauris
+                    ut orci ullamcorper, faucibus sem a, consequat mi. Phasellus tristique felis sit amet
+                    magna viverra euismod. Aenean sed libero auctor ex lobortis accumsan non et leo. Cras
+                    tempus sapien volutpat condimentum interdum. Vestibulum dapibus condimentum libero, eu
+                    porttitor augue ornare sed. Praesent sit amet sapien tincidunt, sodales risus et, egestas
+                    dui. Sed venenatis fringilla leo ut ornare. Donec pharetra mauris quam, a faucibus lectus
+                    vehicula id. Mauris nunc ex, rhoncus id cursus nec, elementum vitae dolor. Nam sollicitudin,
+                    metus sed venenatis gravida, tortor tortor faucibus nisi, id tincidunt ante arcu a lacus.
+                    Mauris lobortis sapien viverra, mattis nisl quis, interdum mauris.
+                </p>
+
+            </section>
+
+            <section class="sec3">
+                <h1 class="center">Contact Us!</h1>
+                <p></p>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47365.72628262632!2d-111.91534449995848!3d42.099805311916796!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8754f78c7cda6c31%3A0xf1b3b4fc465a4a3f!2sPreston%2C+ID+83263!5e0!3m2!1sen!2sus!4v1549779191147"
+                    frameborder="0" style="border:0" allowfullscreen></iframe>
+
+
+            </section>
+
+    </main>
+
+    <section class="sec4">
+        <footer>
+            <p>
+                &copy; <span id="updateYear"></span> || Jenni Moody || CIT230
+                <br>
+                <span id="currentDay"></span>, <span id="currentDate"></span> <span id="currentMonth"></span>
+                <span id="currentYear"></span>
+            </p>
+
+        </footer>
+    </section>
+    </div>
+    <script src="scripts/currentdate.js"></script>
+    <script src="scripts/windchill.js"></script>
+
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,155 @@
+/* 64em is also 1028px when basefont is 16px */
+@media only screen and (min-width: 801px) {
+    /*----------body-----------*/
+    
+    /*----------header---------*/
+    #content {
+        font-size: 1.5em;
+    }
+       
+    
+
+    .containerHead {
+        display: flex;
+        flex-direction: row;
+    }
+
+    /*.containerHead > .logo {
+        align-content: flex-start;
+        justify-content: flex-start;
+
+    }
+
+    .containerHead > .currentConditions {
+        align-content: flex-end;
+        justify-content: flex-end;
+    
+
+    }
+    .containerHead > h1 {
+        align-content: center;
+    }*/
+    .currentConditions {
+        background-color: #Bfcc74;
+        font-family: 'Rokkitt', serif;
+        color: #fdfefd;
+        width: 200px;
+        height: 200px;
+        /*display: flex;
+        flex-direction: row;
+        align-content: flex-end;*/
+      
+        
+
+    }
+    
+    
+    /*----------navigation-------*/
+    nav {
+       
+        background-color: #Bfcc74;
+    
+
+    }
+    #primaryNav {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+    }
+    
+    nav button {display: none;}
+    
+        nav ul.hide {
+            
+            /*display: block;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;*/
+        }
+    
+        nav ul {
+          
+        }
+    
+        nav ul li a {
+            border: 1px solid rgba(0,0,0,0.3);
+            
+           /* padding: .6rem 1rem;*/
+        }
+    /*-------------main-------------*/
+    #weatherSum {
+        background: #152301;
+        color: #Bfcc74;
+        width: 300px;
+        height: 300px;
+        margin: 2em;
+        padding: 1em;
+        position: absolute;
+        left: 15px;
+        top: 47px;
+    }
+    .forecast {
+        background-color: #0B4956;
+        margin: 2%;
+        
+    
+    }
+    .forecast h2 {
+        color: #fdfefd;
+        padding: 1em;
+    }
+    
+    .sec2 {
+        height: 500px;
+    }
+    div.row .sec2 figure {
+        width:50%; 
+        float: right;
+        margin: 0;
+    }
+    div.row .sec2 h2 {
+        width:50%;
+        float: left;
+        margin: 0;
+    }
+    div.row .sec2 h5 {
+        width:50%;
+        float: left;
+        margin: 0;
+    }
+    div.row .sec2 p {
+        width:50%;
+        float: left;
+        margin: 0;
+    }
+    
+    .sec3 {
+        height: 400px;
+    }
+    div.row .sec3 iframe {
+        width:50%;
+        float: left;
+        margin: 0;
+    }
+    div.row .sec3 h3 {
+        width: 50%;
+        float: right;
+        margin: 0;
+    }
+
+    #imageContainer {
+        grid-template-columns: 1fr 1fr 1fr;
+    }   
+
+    .shadow:hover {
+        box-shadow: 10px 10px grey;
+    }
+    form label.sbs {
+        padding: .4rem 0;
+    }
+    
+    /*-------------footer----------*/
+    } 

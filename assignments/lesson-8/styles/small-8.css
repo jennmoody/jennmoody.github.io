@@ -1,0 +1,261 @@
+body { 
+    background-color: #fdfefd
+}
+h1, h2, h3, h4, h5, h6 {
+    color: #fdfefd;
+    font-family: 'Martel Sans', cursive;
+}
+
+p {
+    font-family: 'Rokkitt', serif;
+    margin: 2%;
+}
+
+.center{
+    text-align: center;
+}
+
+/* -----------header ----------*/
+
+header {
+    padding: .5rem 2%;
+    background-color: #0B4956;
+
+}
+header h1 {
+    color: #fdfefd;
+    margin: 2%;
+   
+}
+.motto {
+    font-family: 'Rokkitt', serif;
+    color: #Bfcc74;
+ 
+    
+
+}
+header figure.logo {
+    margin: 0 2% 0 0;
+
+}
+
+/* ----------navigation ----------*/
+
+nav button {
+      background: transparent;
+      border: none;
+      font-size: 1.6rem;
+      color: #152301
+
+  }
+ 
+nav {
+    background-color: #bfcc74;
+    font-family: 'Rokkitt', serif;
+      
+    }
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;   
+    
+}
+
+nav ul li a {
+    display: block;
+    padding: 1rem;
+    text-decoration: none;
+    color: #152301;
+    border-top:1px solid rgba(0,0,0,0.3);
+    text-align: center;
+
+}
+
+nav ul li a:hover {background-color: rgba(0,0,0,0.4);}
+
+nav ul li .active {background-color: #848a48; color: #fdfefd;}
+.repsonsive li { display: block;}
+
+nav ul.hide {display: none;}
+
+
+
+
+/* ---------Main----------- */
+main {
+    padding: 0;
+    min-height: 10rem;
+
+}
+
+main h1 {padding: 0 2%;}
+
+main figure.hero {
+    display: block;
+    margin: 0;
+    width: 100%;
+  
+}
+main figure.hero img {width: 100%;}
+
+main figure.article {
+  
+    display: block;
+    margin: 0;
+    width: 100%;
+
+}
+main figure.article img {width: 100%;}
+
+iframe {width: 100%; height: 300px;}
+
+div.row section {padding: 0 2%;}
+
+#weatherSum {
+    background: #152301;
+    color: #Bfcc74;
+    width: 175px;
+    height: 175px;
+    margin: 2em;
+    padding: 1em;
+    position: absolute;
+    left: -15px;
+    top: 35px;
+   
+}
+.sec1 {position: relative;}
+
+#weatherSum h4 {
+    color: #Bfcc74;
+    padding: 0 2%;
+}
+
+
+.sec1 {
+    background-color: #fdfefd;
+}
+.sec1 h1 {
+    color: #152301;
+}
+
+.sec2 {
+    background-color: #Bfcc74;
+    margin: 2%;
+    
+}
+.sec2 h2 {
+    margin: 1em;
+}
+.sec2 h5 { 
+    margin: 1em;
+}
+    
+
+.sec3 { 
+    background-color: #0b4956;
+}
+.sec3 h3 {padding: 1em;}
+
+footer {
+    background-color: #Bfcc74;
+    clear: both;
+}
+ 
+/*----Gallery Page ----*/
+
+#imageContainer {
+    display: grid;
+    font-family: 'Rokkitt', serif;
+}
+
+.shadow img {
+    width: 100%;
+    height: auto;
+
+}
+/*---------Form---------*/
+.form {
+    background-color: #0B4956;
+    color:#fdfefd;
+    font-family: 'Rokkitt', serif;
+}
+form fieldset {
+    margin: 2rem 2%;
+    border: 1px solid #fdfefd;
+    padding: .5em 2%;
+}
+form legend {
+    margin: 0 1rem;
+    padding: 0 .5rem;
+}
+form label.top, form div {
+    display: block;
+    padding-top: 1rem;
+
+}
+form label.top input, form label.top select {
+    -webkit-appearance: none;
+    display: block;
+    font-size: 1rem;
+    padding: .75rem;
+    color: #152301;
+    width: 100%;
+    max-width: 20rem;
+    
+}
+form label.sbs {
+    display: block;
+    padding: .75rem 0;
+    color: #fdfefd;
+}
+form input.submitBtn {
+    border: none;
+    background-color: #Bfcc74;
+    border-radius: 1rem;
+    padding: .75rem 1.5rem;
+    margin: 0 0 2rem 4%;
+    width: 96%;
+    max-width: 20rem;
+}
+form label.top input:required {
+    border-left: red solid 6px;
+
+}
+form label.top input:required:valid {
+    border-left: green solid 6px;
+}
+
+.thankyou {
+    background-color: #848a48;
+    color: #fdfefd;
+    padding: 2rem;
+
+}
+.thankyou p {
+    font-size: 1.25rem;
+}
+
+
+@media screen and (max-width: 500px) {
+    .forecast { 
+        display: none;
+
+    }
+    .currentConditions {
+        display: none;
+    }
+
+    #imageContainer {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
+/* ----Clearfix: Force an Element not to collapse ----*/
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}  
