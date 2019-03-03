@@ -8,7 +8,7 @@ h1, h2, h3, h4, h5, h6 {
 
 p {
     font-family: 'Rokkitt', serif;
-    margin: 2%;
+    /*margin: 2%;*/
 }
 
 .center{
@@ -18,26 +18,22 @@ p {
 /* -----------header ----------*/
 
 header {
-    padding: .5rem 2%;
+    /*padding: .5rem 2%;*/
     background-color: #0B4956;
 
 }
 header h1 {
     color: #fdfefd;
-    margin: 2%;
+    /*margin: 2%;*/
    
 }
-.motto {
-    font-family: 'Rokkitt', serif;
-    color: #Bfcc74;
  
-    
-
+.containerHead {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
-header figure.logo {
-    margin: 0 2% 0 0;
 
-}
 
 /* ----------navigation ----------*/
 
@@ -75,6 +71,7 @@ nav ul li a {
 nav ul li a:hover {background-color: rgba(0,0,0,0.4);}
 
 nav ul li .active {background-color: #848a48; color: #fdfefd;}
+
 .repsonsive li { display: block;}
 
 nav ul.hide {display: none;}
@@ -110,9 +107,9 @@ main figure.article img {width: 100%;}
 
 iframe {width: 100%; height: 300px;}
 
-div.row section {padding: 0 2%;}
+section {padding: 0 2%;}
 
-#weatherSum {
+/*#weatherSum {
     background: #152301;
     color: #Bfcc74;
     width: 175px;
@@ -129,7 +126,7 @@ div.row section {padding: 0 2%;}
 #weatherSum h4 {
     color: #Bfcc74;
     padding: 0 2%;
-}
+}*/
 
 
 .sec1 {
@@ -141,15 +138,15 @@ div.row section {padding: 0 2%;}
 
 .sec2 {
     background-color: #Bfcc74;
-    margin: 2%;
-    
+    /*margin: 2%;  */ 
 }
-.sec2 h2 {
+
+/*.sec2 h2 {
     margin: 1em;
-}
-.sec2 h5 { 
+}*/
+/*.sec2 h5 { 
     margin: 1em;
-}
+}*/
     
 
 .sec3 { 
@@ -179,6 +176,14 @@ footer {
     background-color: #0B4956;
     color:#fdfefd;
     font-family: 'Rokkitt', serif;
+}
+.form h1 {
+    padding-top: 2%;
+
+} 
+
+.form h2 {
+    margin: 2%;
 }
 form fieldset {
     margin: 2rem 2%;
@@ -219,7 +224,7 @@ form input.submitBtn {
     max-width: 20rem;
 }
 form label.top input:required {
-    border-left: red solid 6px;
+    border-left:red solid 6px;
 
 }
 form label.top input:required:valid {

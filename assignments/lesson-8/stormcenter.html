@@ -20,17 +20,17 @@
 
     <header class="containerHead clearfix">
         <figure class="logo">
-            <img src="images/logo2-assets/logo2.png" alt="logo" sizes="100vw"
-                srcset="images/logo2-assets/logo2.png 400w, images/logo2-assets/logo3.png 1200w">
+            <img src="images/logo2-assets/logo2.png" alt="logo" sizes="100vw">
+                
 
         </figure>
 
-        <h1 class="center">Weather in the Wild</h1>
-        <div class="motto">
-            <h2 class="center">We have the weather for your wilderness adventure!</h2>
-        </div>
+        <div>
+                <h1 class="center">Weather in the Wild</h1>
+                <h2 class="center">We have the weather for your wilderness adventure!</h2>
+            </div>
         <div class="currentConditions">
-            <h3 class="center">Current Conditions</h3>
+            <h1 class="center">Current Conditions</h1>
             <div class="center">
                 <span>Current Temperature: </span><span id="temp"></span>
             </div>
@@ -57,6 +57,7 @@
 <main class="form">
 
     <h1>Weather Watcher Report</h1>
+    <h2>Record your the storms in your area here:</h2>
     <form method="get" action="thanks.html">
             
         <fieldset>
@@ -81,7 +82,10 @@
                             </datalist>
                     </label>
                            
-                    <label class="top">Storm Serverity <input type="range" name="points" min="0" max="10"></label>
+                    <label class="top">Storm Serverity (1-10)</label>
+                    <span><input type="range" name="points" min="0" max="10" 
+                        oninput="adjustRating(this.value)" onchange="adjustRating(this.value)"></span>
+		                <span id="ratingvalue">5</span><br>
                     <label class="top">Storm Region
                                 <select name="storm">
                                     <option value="">Select Region &#9662;</option>
@@ -108,7 +112,7 @@
 
 
     <section class="sec4">
-    <footer>
+    <footer class="center">
             <p>
                 &copy; <span id="updateYear"></span> || Jenni Moody || CIT230
                 <br>
@@ -121,6 +125,7 @@
     </div>
     <script src="scripts/currentdate.js"></script>
     <script src="scripts/windchill.js"></script>
+    <script src="scripts/range.js"></script>
 </body>
 
 </html>

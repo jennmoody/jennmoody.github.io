@@ -9,10 +9,10 @@
        
     
 
-    .containerHead {
+    /*.containerHead {
         display: flex;
         flex-direction: row;
-    }
+    }*/
 
     /*.containerHead > .logo {
         align-content: flex-start;
@@ -32,15 +32,19 @@
     .currentConditions {
         background-color: #Bfcc74;
         font-family: 'Rokkitt', serif;
-        color: #fdfefd;
-        width: 200px;
-        height: 200px;
-        /*display: flex;
-        flex-direction: row;
+        color: #152301;
+        font-size: 1.1em;
+        padding: .4em;
+        margin: 1.5%;
+        max-width: 150px;
+        max-height: 150px;
+     
+       /* flex-direction: row;
         align-content: flex-end;*/
-      
-        
-
+    }
+    .currentConditions h1 {
+        color: #152301;
+        font-size: 1em;
     }
     
     
@@ -80,7 +84,7 @@
            /* padding: .6rem 1rem;*/
         }
     /*-------------main-------------*/
-    #weatherSum {
+    /*#weatherSum {
         background: #152301;
         color: #Bfcc74;
         width: 300px;
@@ -90,7 +94,7 @@
         position: absolute;
         left: 15px;
         top: 47px;
-    }
+    }*/
     .forecast {
         background-color: #0B4956;
         margin: 2%;
@@ -102,39 +106,36 @@
         padding: 1em;
     }
     
-    .sec2 {
+   /*.sec2 {
         height: 500px;
-    }
-    div.row .sec2 figure {
-        width:50%; 
+    }*/
+   .sec2 figure {
+        width: 50%; 
+        max-width: 600px;
         float: right;
         margin: 0;
     }
-    div.row .sec2 h2 {
+    /*.sec2 h1, .sec h2 {
         width:50%;
         float: left;
         margin: 0;
     }
-    div.row .sec2 h5 {
+   /*.sec2 p {
         width:50%;
         float: left;
         margin: 0;
-    }
-    div.row .sec2 p {
-        width:50%;
-        float: left;
-        margin: 0;
-    }
+    }*/
     
     .sec3 {
         height: 400px;
     }
-    div.row .sec3 iframe {
+    .sec3 iframe {
         width:50%;
+        max-width: 600px;
         float: left;
         margin: 0;
     }
-    div.row .sec3 h3 {
+    .sec3 h3 {
         width: 50%;
         float: right;
         margin: 0;
