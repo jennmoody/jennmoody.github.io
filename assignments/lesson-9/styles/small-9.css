@@ -41,7 +41,7 @@ nav button {
       background: transparent;
       border: none;
       font-size: 1.6rem;
-      color: #152301
+      color: #152301;
 
   }
  
@@ -76,6 +76,10 @@ nav ul li .active {background-color: #848a48; color: #fdfefd;}
 
 nav ul.hide {display: none;}
 
+#primaryNav {
+    font-size: 1.25rem;
+}
+
 
 
 
@@ -100,19 +104,16 @@ section {padding: 0 2%;}
 }
 .sec1 h1 {
     color: #152301;
-    font-size: 2em;
 }
-
 
 
 .sec2 {
     background-color: #Bfcc74;
     margin: 2%;
     padding: 1em;
-    font-size: 1.25em;
- 
+   
 }
-.sec2 h1 {font-size: 1.5em;}
+
 
 .sec3 { 
     background-color: #0b4956;
@@ -216,14 +217,16 @@ form label.top input:required:valid {
     background-color: #0B4956;
     color: #fdfefd;
     text-align: center;
-    font-size: 1.25em;
 
 }
 .town h2 {
     font-style: italic;
+    font-size: 1.25rem;
 }
 
-
+.town p {
+    font-size: 1.15rem;
+}
 #home {
     margin: 1%;
 }
@@ -234,8 +237,7 @@ form label.top input:required:valid {
 @media screen and (max-width: 500px) {
     .forecast { 
         display: none;
-        h1 { font-size: 1.25em;}
-        h2 {font-size: 1em;}
+       
     }
     .currentConditions {
         display: none;

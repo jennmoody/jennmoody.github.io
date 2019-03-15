@@ -57,22 +57,25 @@
         grid-template-columns: 1fr 1fr;
         grid-column-gap: 1em;
     }
+    .sec2 p {
+        font-size: 1.15rem;
+    }
     
     .sec3 {
-        font-size: 1.5em;
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-column-gap: 1em;
         margin: 2%;
     }
 
+    .sec3 p {
+        font-size: 1.5rem;
+    }
+
     .sec3 iframe {
         margin: 0;
     }
     
-    .sec3 h3 {
-        width: 50%;
-    }
 
     #imageContainer {
         grid-template-columns: 1fr 1fr 1fr;
