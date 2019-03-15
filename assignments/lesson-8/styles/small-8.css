@@ -80,13 +80,13 @@ nav ul.hide {display: none;}
 
 
 /* ---------Main----------- */
-main {
+/*main {
     padding: 0;
     min-height: 10rem;
 
 }
 
-main h1 {padding: 0 2%;}
+main h1 {padding: 0 2%;}*/
 
 main figure.hero {
     display: block;
@@ -138,7 +138,9 @@ section {padding: 0 2%;}
 
 .sec2 {
     background-color: #Bfcc74;
-    /*margin: 2%;  */ 
+}
+.sec2 h1, h2, p {
+    margin: 2%;
 }
 
 /*.sec2 h2 {

@@ -8,7 +8,7 @@ h1, h2, h3, h4, h5, h6 {
 
 p {
     font-family: 'Rokkitt', serif;
-    /*margin: 2%;*/
+   
 }
 
 .center{
@@ -18,13 +18,13 @@ p {
 /* -----------header ----------*/
 
 header {
-    /*padding: .5rem 2%;*/
+   
     background-color: #0B4956;
 
 }
 header h1 {
     color: #fdfefd;
-    /*margin: 2%;*/
+
    
 }
  
@@ -80,13 +80,7 @@ nav ul.hide {display: none;}
 
 
 /* ---------Main----------- */
-main {
-    padding: 0;
-    min-height: 10rem;
 
-}
-
-main h1 {padding: 0 2%;}
 
 main figure.hero {
     display: block;
@@ -96,38 +90,10 @@ main figure.hero {
 }
 main figure.hero img {width: 100%;}
 
-main figure.article {
-  
-    display: block;
-    margin: 0;
-    width: 100%;
-
-}
-main figure.article img {width: 100%;}
 
 iframe {width: 100%; height: 300px;}
 
 section {padding: 0 2%;}
-
-/*#weatherSum {
-    background: #152301;
-    color: #Bfcc74;
-    width: 175px;
-    height: 175px;
-    margin: 2em;
-    padding: 1em;
-    position: absolute;
-    left: -15px;
-    top: 35px;
-   
-}
-.sec1 {position: relative;}
-
-#weatherSum h4 {
-    color: #Bfcc74;
-    padding: 0 2%;
-}*/
-
 
 .sec1 {
     background-color: #fdfefd;
@@ -136,23 +102,23 @@ section {padding: 0 2%;}
     color: #152301;
 }
 
+
+
 .sec2 {
     background-color: #Bfcc74;
-    /*margin: 2%;  */ 
+    margin: 2%;
+    padding: 1em;
+ 
 }
 
-/*.sec2 h2 {
-    margin: 1em;
-}*/
-/*.sec2 h5 { 
-    margin: 1em;
-}*/
-    
 
 .sec3 { 
     background-color: #0b4956;
+    color: #fdfefd;
+
 }
-.sec3 h3 {padding: 1em;}
+.sec3 h1 {text-align: center;}
+
 
 footer {
     background-color: #Bfcc74;
@@ -179,6 +145,7 @@ footer {
 }
 .form h1 {
     padding-top: 2%;
+    margin: 2%;
 
 } 
 
@@ -206,7 +173,7 @@ form label.top input, form label.top select {
     padding: .75rem;
     color: #152301;
     width: 100%;
-    max-width: 20rem;
+    max-width: 15rem;
     
 }
 form label.sbs {
@@ -217,18 +184,17 @@ form label.sbs {
 form input.submitBtn {
     border: none;
     background-color: #Bfcc74;
-    border-radius: 1rem;
     padding: .75rem 1.5rem;
     margin: 0 0 2rem 4%;
     width: 96%;
-    max-width: 20rem;
+    max-width: 15rem;
 }
 form label.top input:required {
-    border-left:red solid 6px;
+    border-left:#B3003B solid 6px;
 
 }
 form label.top input:required:valid {
-    border-left: green solid 6px;
+    border-left: #848a48 solid 6px;
 }
 
 .thankyou {
@@ -255,6 +221,10 @@ form label.top input:required:valid {
 }
 h1 { font-size: 16pt;}
 h2 {font-size: 14pt;}
+
+#home {
+    margin: 1%;
+}
 
 
 
