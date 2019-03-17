@@ -1,0 +1,186 @@
+/* 64em is also 1028px when basefont is 16px */
+@media only screen and (min-width: 801px) {
+    
+    /*----------header---------*/
+    .currentConditions {
+        background-color: #Bfcc74;
+        font-family: 'Rokkitt', serif;
+        color: #152301;
+        font-size: 1.1em;
+        padding: .4em;
+        margin: 1.5%;
+    }
+    .currentConditions h1 {
+        color: #152301;
+        font-size: 1em;
+    }
+    .title {
+        font-size: 3em;
+    }
+    
+    /*----------navigation-------*/
+    nav {
+       
+        background-color: #Bfcc74;
+    
+
+    }
+    #primaryNav {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+    }
+    
+    nav button {display: none;}
+
+        nav ul li a {
+            border: 1px solid rgba(0,0,0,0.3);
+            
+        }
+    /*-------------main-------------*/
+    .forecast {
+        background-color: #0B4956;
+        margin: 2%;
+       
+    }
+    .forecast h2 {
+        color: #fdfefd;
+        padding: 1em;
+    }
+    
+   .sec2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 1em;
+    }
+    .sec2 p {
+        font-size: 1.15rem;
+    }
+    
+    .sec3 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 1em;
+        margin: 2%;
+    }
+
+    .sec3 p {
+        font-size: 1.5rem;
+    }
+
+    .sec3 iframe {
+        margin: 0;
+    }
+    
+
+    #imageContainer {
+        grid-template-columns: 1fr 1fr 1fr;
+    }   
+
+    .shadow:hover {
+        box-shadow: 10px 10px grey;
+    }
+    form label.sbs {
+        padding: .4rem 0;
+    }
+
+    /*------------------table------------------*/
+    /* spacing */
+
+table{
+    table-layout: fixed;
+    border-width: 100%;
+}
+  
+  
+th, td {
+    padding: 8px;
+  }
+
+  /* typography */
+
+html {
+    font-family: 'Martel Sans', sans-serif; 
+  }
+
+thead {
+    font-size: 1.6em;
+    font-weight: bold;
+  }
+
+tfoot {
+    font-size: .75em;
+    
+  }
+
+th {
+    letter-spacing: 1px;
+    
+  }
+td {
+    letter-spacing: 1px;
+
+  }
+tbody td {
+    text-align: center;
+
+  }
+thead, tfoot  {
+    text-align: center;
+}
+
+td.italic {
+    font-style: italic;
+}
+
+  
+  /* color */
+table {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2%;
+
+
+}
+
+thead, tfoot {
+    background: #0B4956;
+    color: #fdfefd;
+  }
+
+tbody tr th {
+    background-color: #Bfcc74;
+    color: #152301;
+  }
+
+  /*tbody tr:nth-child(odd) {
+    background-color: #e7ffed;
+  }*/
+  
+  tbody tr:nth-child(even) {
+    background-color: #e7f0ed;
+  }
+  
+ 
+  table {
+    background-color: #0B4956;
+  }
+
+    /*table {
+        border: solid #152301;
+ }*/
+
+    /*--------home-------*/
+
+    #home {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-column-gap: 1em;
+        padding: 1em;
+    }
+    
+    /*-------------footer----------*/
+}
