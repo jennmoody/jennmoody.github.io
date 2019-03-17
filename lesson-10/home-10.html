@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Preston</title>
+    <link href="https://fonts.googleapis.com/css?family=Martel+Sans|Rokkitt" rel="stylesheet">
+    <link href="styles/normalize.css" rel="stylesheet">
+    <link href="styles/small-10.css" rel="stylesheet">
+    <link href="styles/large-10.css" rel="stylesheet">
+    <link href="styles/medium-10.css" rel="stylesheet">
+    <script text="javascript" src="scripts/hamburger.js"></script>
+
+
+</head>
+
+<body>
+
+    <header class="containerHead clearfix">
+        <figure class="logo">
+            <img src="images/logo2-assets/logo150px.png" alt="logo" sizes="100vw">
+              
+
+        </figure>
+        <div>
+            <h1 class="center title">Weather in the Wild</h1>
+            <h2 class="center">We have the weather for your wilderness adventure!</h2>
+        </div>
+        <div class="currentConditions">
+            <h1 class="center">Current Conditions</h1>
+            <div class="center">
+                <span>Current Temperature: </span><span id="temp"></span>
+            </div>
+            <div class="center">
+                <span>Wind Speed: </span><span id="windSpeed"></span>
+            </div>
+            <div class="center">
+                <span>Wind Chill: </span><span id="windChill"></span>
+            </div>
+        </div>
+    </header>
+
+    <nav class="clearfix">
+        <button onclick="toggleMenu()">&#9776;Menu</button>
+        <ul id="primaryNav" class="hide">
+            <li><a href="home-10.html" class="active">Home</a></li>
+            <li><a href="preston-10.html">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="stormcenter.html">Storm Center</a></li>
+            <li><a href="gallery-10.html">Gallery</a></li>
+        </ul>
+    </nav>
+    <main>
+        <body>
+            <section id="home">
+                <article class="town">
+                        <h1>Preston</h1>
+                        <h2 id="prestonMotto"></h2> 
+                        <p> 
+                            Year Founded:
+                            <span id="yearFoundedPreston"></span>
+                        </p>
+                        <p>
+                            Population:
+                            <span id="populationPreston"></span>
+                        </p>
+                        <p>
+                            Annual Rain Fall:
+                            <span id="averageRainPreston"></span>
+                            inches
+                        </p>
+                        <img src="images/town1.400w.jpg" alt="Preston">
+                </article>
+           
+                <article class="town">
+                        <h1>Fish Haven</h1>
+                        <h2 id="FishHavenMotto"></h2> 
+                        <p> 
+                            Year Founded:
+                            <span id="yearFoundedFishHaven"></span>
+                        </p>
+                        <p>
+                            Population:
+                            <span id="populationFishHaven"></span>
+                        </p>
+                        <p>
+                            Annual Rain Fall:
+                            <span id="averageRainFishHaven"></span>
+                            inches
+                        </p>
+                        <img src="images/town2.400w.jpg" alt="Fish Haven">
+                </article>
+           
+                <article class="town">
+                        <h1>Soda Springs</h1>
+                        <h2 id="SodaMotto"></h2> 
+                        <p> 
+                            Year Founded:
+                            <span id="yearFoundedSoda"></span>
+                        </p>
+                        <p>
+                            Population:
+                            <span id="populationSoda"></span>
+                        </p>
+                        <p>
+                            Annual Rain Fall:
+                            <span id="averageRainSoda"></span>
+                            inches
+                        </p>
+                        <img src="images/town3.400w.jpg" alt="Soda Springs">
+                </article>
+            </section>
+         
+            <div class="forecast">
+                    <h1 class="center">5 Day Forecast</h1>
+            </div>
+            <section class="sec2">
+                    <article>
+                    <h1>Current Weather Story</h1>
+                    <h2>by author</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum a tincidunt lacus.
+                        Quisque mollis nibh vel pulvinar eleifend. Maecenas et rhoncus arcu, et dapibus turpis.
+                        Nullam eleifend, sapien vitae sagittis rhoncus, mauris tellus rhoncus felis, sit amet
+                        rutrum mi justo quis ex. Cras vestibulum eget purus eu facilisis. Integer facilisis
+                        dolor nisi, id rutrum lorem facilisis sit amet. Pellentesque scelerisque ante diam.
+                        Ut nec turpis nisl. Etiam nunc libero, vestibulum sed viverra vel, gravida sed sapien.
+                        <br>
+                        <br>
+                        Etiam vulputate placerat diam at hendrerit. Nulla facilisi. Fusce ac neque a sapien
+                        efficitur tristique. Fusce eu diam convallis, hendrerit metus sed, egestas mi. Mauris
+                        ut orci ullamcorper, faucibus sem a, consequat mi. Phasellus tristique felis sit amet
+                        magna viverra euismod. Aenean sed libero auctor ex lobortis accumsan non et leo. Cras
+                        tempus sapien volutpat condimentum interdum. Vestibulum dapibus condimentum libero, eu
+                        porttitor augue ornare sed. Praesent sit amet sapien tincidunt, sodales risus et, egestas
+                        dui. Sed venenatis fringilla leo ut ornare. Donec pharetra mauris quam, a faucibus lectus
+                        vehicula id. Mauris nunc ex, rhoncus id cursus nec, elementum vitae dolor. Nam sollicitudin,
+                        metus sed venenatis gravida, tortor tortor faucibus nisi, id tincidunt ante arcu a lacus.
+                        Mauris lobortis sapien viverra, mattis nisl quis, interdum mauris.
+                    </p>
+                    </article>
+                    <figure class="story">
+                            <img src="images/saplingsmall.jpg" alt="sapling"
+                            srcset="images/saplingsmall.jpg 400w, images/saplinglarge.jpg 1600w">
+                        </figure>
+    
+                </section>
+            
+        </body>
+
+    </main>
+    <section class="sec4">
+        <footer class="center">
+            <p>
+                &copy; <span id="updateYear"></span> || Jenni Moody || CIT230
+                <br>
+                <span id="currentDay"></span>, <span id="currentDate"></span> <span id="currentMonth"></span>
+                <span id="currentYear"></span>
+            </p>
+
+        </footer>
+    </section>
+    </div>
+    <script src="scripts/currentdate.js"></script>
+    <script src="scripts/windchill.js"></script>
+    <script src="scripts/home.js"></script>
+
+
+
+
+
+</body>
+
+</html>

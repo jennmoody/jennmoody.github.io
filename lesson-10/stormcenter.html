@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Preston</title>
+    <link href="https://fonts.googleapis.com/css?family=Martel+Sans|Rokkitt" rel="stylesheet">
+    <link href="styles/normalize.css" rel="stylesheet">
+    <link href="styles/small-10.css" rel="stylesheet">
+    <link href="styles/large-10.css" rel="stylesheet">
+    <link href="styles/medium-10.css" rel="stylesheet">
+    <script text="javascript" src="scripts/hamburger.js"></script>
+
+
+</head>
+
+<body>
+
+    <header class="containerHead clearfix">
+        <figure class="logo">
+            <img src="images/logo2-assets/logo2.png" alt="logo" sizes="100vw">
+                
+
+        </figure>
+
+        <div>
+                <h1 class="center title">Weather in the Wild</h1>
+                <h2 class="center">We have the weather for your wilderness adventure!</h2>
+            </div>
+        <div class="currentConditions">
+            <h1 class="center">Current Conditions</h1>
+            <div class="center">
+                <span>Current Temperature: </span><span id="temp"></span>
+            </div>
+            <div class="center">
+                <span>Wind Speed: </span><span id="windSpeed"></span>
+            </div>
+            <div class="center">
+                <span>Wind Chill: </span><span id="windChill"></span>
+            </div>
+        </div>
+    </header>
+   
+<nav class="clearfix">
+        <button onclick="toggleMenu()">&#9776;Menu</button>
+        <ul id="primaryNav" class="hide">
+            <li><a href="home-10.html">Home</a></li>
+            <li><a href="preston-10.html" >Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="stormcenter.html"class="active">Storm Center</a></li>
+            <li><a href="gallery-10.html">Gallery</a></li>
+        </ul>
+    </nav>
+<main class="form">
+
+    <h1>Weather Watcher Report</h1>
+    <h2>Record the storms in your area here:</h2>
+    <form method="get" action="thanks.html">
+            
+        <fieldset>
+                    <legend>Storm Watcher Information</legend>
+                    <label class="top">First Name* <input type="text" name="fname" required></label>
+                    <label class="top">Last Name* <input type="text" name="lname" required></label>
+                    <label class="top">Phone <input type="tel" name="phone" placeholder="1235551234" required></label>
+                    <label class="top">Email* <input type="email" name="email" placeholder="someone@gmail.com"></label>
+                    <label class="top">Zipcode* <input type="text" name="zipcode" required></label>
+        </fieldset>
+        <fieldset>
+                    <legend>Storm Stats</legend>
+                    <label class="top">Date of Storm<input type="date" name="completedDate"></label>
+                    <label class="top">Type of Storm
+                            <input list="stormType" name="stormType">
+                            <datalist id="stormType">
+                              <option value="Flash Flood">
+                              <option value="Hail">
+                              <option value="Thunderstorm">
+                              <option value="Hurricane">
+                              <option value="Tornado">
+                            </datalist>
+                    </label>
+                           
+                    <label class="top">Storm Serverity (1-10)</label>
+                    <span><input type="range" name="points" min="0" max="10" 
+                        oninput="adjustRating(this.value)" onchange="adjustRating(this.value)"></span>
+		                <span id="ratingvalue">5</span><br>
+                    <label class="top">Storm Region
+                                <select name="storm">
+                                    <option value="">Select Region &#9662;</option>
+                                    <option value="preston">Preston</option>
+                                    <option value="sodaSprings">Soda Springs</option>
+                                    <option value="fishHaven">Fish Haven</option>
+                                </select>
+                    </label>
+                    <div class="sbs">User in Danger</div>
+                    <label class="sbs"><input type="radio" name="yesNo" value="yes">Yes</label> 
+                    <label class="sbs"><input type="radio" name="yesNo" value="no">No</label> 
+        
+      
+        
+            <textarea rows="4" cols="35" name="comment" form="usrform" class="comments">
+                    Comments:</textarea>
+        </fieldset>
+             
+        <input type="submit" value = "Send to Storm Center" class="submitBtn">
+
+        </form>
+    </main>
+
+
+
+    <section class="sec4">
+    <footer class="center">
+            <p>
+                &copy; <span id="updateYear"></span> || Jenni Moody || CIT230
+                <br>
+                <span id="currentDay"></span>, <span id="currentDate"></span> <span id="currentMonth"></span>
+                <span id="currentYear"></span>
+            </p>
+
+        </footer>
+    </section>
+    </div>
+    <script src="scripts/currentdate.js"></script>
+    <script src="scripts/windchill.js"></script>
+    <script src="scripts/range.js"></script>
+</body>
+
+</html>
