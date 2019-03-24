@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Fish Haven - Weather in the Wild</title>
+    <link href="https://fonts.googleapis.com/css?family=Martel+Sans|Rokkitt" rel="stylesheet">
+    <link href="styles/normalize.css" rel="stylesheet">
+    <link href="styles/small.css" rel="stylesheet">
+    <link href="styles/large.css" rel="stylesheet">
+    <link href="styles/medium.css" rel="stylesheet">
+    <script text="javascript" src="scripts/hamburger.js"></script>
+
+
+</head>
+
+<body>
+
+    <header class="containerHead clearfix">
+        <figure class="logo">
+            <img src="images/logo100w.jpg" alt="logo">
+
+
+        </figure>
+        <div>
+            <h1 class="center title">Weather in the Wild</h1>
+            <h2 class="center">We have the weather for your wilderness adventure!</h2>
+        </div>
+
+
+
+    </header>
+
+    <nav class="clearfix center">
+        <button onclick="toggleMenu()">&#9776;Menu</button>
+        <ul id="primaryNav" class="hide">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="preston.html">Preston</a></li>
+            <li><a href="sodasprings.html">Soda Springs</a></li>
+            <li><a href="fishhaven.html" class="active">Fish Haven</a></li>
+            <li><a href="stormcenter.html">Storm Center</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section class="sec1">
+            <h1 class="center">Fish Haven</h1>
+            <div class="weatherSummary">
+                <h3 class="center">Weather Summary</h3>
+                <div class="center">
+                    <p><span>Currently: </span><span id="current-weather"></span></p>
+                </div>
+                <div class="center">
+                    <p><span>Temperature: </span><span id="current-temp"></span>&deg; F</p>
+                </div>
+                <div class="center">
+                    <p><span>Humidity: </span><span id="current-humidity"></span> %</p>
+                </div>
+                <div class="center">
+                    <p><span>Wind Speed: </span><span id="current-windspeed"></span> mph</p>
+                </div>
+                <div class="center">
+                    <p><span>Wind Chill: </span><span id="windChill"></span>&deg; F</p>
+                </div>
+
+            </div>
+
+            <div>
+
+                <figure class="hero">
+                    <img src="images/fishhaven400w.jpg" alt="Fish Haven, Idaho" sizes="100vw"
+                        srcset="images/fishhaven400w.jpg 400w, images/fishhaven800w.jpg 800w, images/fishhaven1200w.jpg 1200w">
+                </figure>
+            </div>
+        </section>
+        <div>
+            <table>
+
+                <thead>
+                    <tr>
+                        <td colspan="6">5 Day Forecast</td>
+                    </tr>
+
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <th>Day</th>
+                        <th id="day1Name"></th>
+                        <th id="day2Name"></th>
+                        <th id="day3Name"></th>
+                        <th id="day4Name"></th>
+                        <th id="day5Name"></th>
+                    </tr>
+
+                    <tr>
+                        <th>Temperature</th>
+                        <td><span id="day1Temp"></span>&deg; F</td>
+                        <td><span id="day2Temp"></span>&deg; F</td>
+                        <td><span id="day3Temp"></span>&deg; F</td>
+                        <td><span id="day4Temp"></span>&deg; F</td>
+                        <td><span id="day5Temp"></span>&deg; F</td>
+                    </tr>
+
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="6">Weather data from OpenWeatherMap.org</td>
+                    </tr>
+                </tfoot>
+
+            </table>
+
+        </div>
+
+        <section class="sec2">
+            <article>
+                <h1>View From the Sky</h1>
+                <h2>by Avery Lee and Josie Moody</h2>
+                <p>
+                    Imagine being lifted off the ground and feeling the wind on your face. You've now reached 1,000 feet
+                    in the air. You're feeling terrified, but ultimately relaxed from your lack of control. Hot air
+                    ballooning can
+                    primarily effect your well-being, making you feel happier and increasing your heart rate even after
+                    your
+                    ride is over.
+                    <br>
+                    <br>
+                    Hot air ballooning can give you a higher perspective of your environment, provide peace of mind, and
+                    create unique
+                    and unforgettable memories. The average height that a hot air balloon flies is 2,000 feet. Some hot
+                    air balloons
+                    can fit up to 80 passengers, though the average hot air balloon can only fit 4 to 8 people. Hot air
+                    ballooning is a
+                    great way to set off your spring.
+
+
+                </p>
+            </article>
+            <figure class="article">
+                <img src="images/hotairballoonsmall.jpg" alt="hot air balloon" sizes="100vw"
+                    srcset="images/hotairballoonsmall.jpg 400w, images/hotairballoonmedium.jpg 800w, images/hotairballoonlarge.jpg 1600w">
+            </figure>
+
+        </section>
+
+        <section class="sec3">
+
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47365.72628262632!2d-111.91534449995848!3d42.099805311916796!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8754f78c7cda6c31%3A0xf1b3b4fc465a4a3f!2sPreston%2C+ID+83263!5e0!3m2!1sen!2sus!4v1549779191147"
+                frameborder="0" style="border:0" allowfullscreen></iframe>
+
+            <article>
+                <h1 class="center">Contact Us!</h1>
+                <p class="center">Phone Number: 1 800-222-3333<br>
+                    Email: weatherinthewild@weather.org<br>
+                    Address: PO Box 22333<br>
+                    Preston, Idaho 83263</p>
+            </article>
+
+        </section>
+
+    </main>
+
+    <section class="sec4">
+        <footer class="center">
+            <p>
+                &copy; <span id="updateYear"></span> || Jenni Moody || CIT230
+                <br>
+                <span id="currentDay"></span>, <span id="currentDate"></span> <span id="currentMonth"></span>
+                <span id="currentYear"></span>
+            </p>
+
+        </footer>
+    </section>
+    </div>
+    <script src="scripts/currentdate.js"></script>
+
+    <script src="scripts/fishhavenweather.js"></script>
+
+
+
+
+
+</body>
+
+</html>

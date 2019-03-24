@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Iamge Gallery - Weather in the Wild</title>
+    <link href="https://fonts.googleapis.com/css?family=Martel+Sans|Rokkitt" rel="stylesheet">
+    <link href="styles/normalize.css" rel="stylesheet">
+    <link href="styles/small.css" rel="stylesheet">
+    <link href="styles/large.css" rel="stylesheet">
+    <link href="styles/medium.css" rel="stylesheet">
+    <script text="javascript" src="scripts/hamburger.js"></script>
+
+
+</head>
+
+<body>
+
+    <header class="containerHead clearfix">
+        <figure class="logo">
+            <img src="images/logo100w.jpg" alt="logo">
+
+
+        </figure>
+        <div>
+            <h1 class="center title">Weather in the Wild</h1>
+            <h2 class="center">We have the weather for your wilderness adventure!</h2>
+        </div>
+
+    </header>
+
+    <nav class="clearfix center">
+        <button onclick="toggleMenu()">&#9776;Menu</button>
+        <ul id="primaryNav" class="hide">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="preston.html">Preston</a></li>
+            <li><a href="sodasprings.html">Soda Springs</a></li>
+            <li><a href="fishhaven.html">Fish Haven</a></li>
+            <li><a href="stormcenter.html">Storm Center</a></li>
+            <li><a href="gallery.html" class="active">Gallery</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="row">
+            <section class="sec1">
+                <h1 class="center">Image Gallery</h1>
+                <div id="imageContainer">
+                    <figure class="shadow">
+                        <img src="images/backpacksmall.jpg" alt="backpacking in snow">
+                        <figcaption>Winter is a great time for a backpacking adventure!</figcaption>
+                    </figure>
+                    <figure class="shadow">
+                        <img src="images/fishingsmall.jpg" alt="ice fishing">
+
+                        <figcaption>Anglers are hooking the big ones out on the lake.</figcaption>
+                    </figure>
+                    <figure class="shadow">
+                        <img src="images/skismall.jpg" alt="cross country skiing">
+                        <figcaption>No better way to spend the day than cross country skiing.</figcaption>
+                    </figure>
+                    <figure class="shadow">
+                        <img src="images/deersmall.jpg" alt="deer in snow">
+                        <figcaption>Catch a glimpse of some beautiful wildlife.</figcaption>
+                    </figure>
+                    <figure class="shadow">
+                        <img src="images/highclimbsmall.jpg" alt="hikers in snow">
+                        <figcaption>Grab your snowshoes and head for the trails!</figcaption>
+                    </figure>
+                    <figure class="shadow">
+                        <img src="images/picnicsmall.jpg" alt="snowy river">
+                        <figcaption>West Picnic Area closed due to high water levels in the river.</figcaption>
+                    </figure>
+                </div>
+
+
+    </main>
+
+    <section class="sec4">
+        <footer class="center">
+            <p>
+                &copy; <span id="updateYear"></span> || Jenni Moody || CIT230
+                <br>
+                <span id="currentDay"></span>, <span id="currentDate"></span> <span id="currentMonth"></span>
+                <span id="currentYear"></span>
+            </p>
+
+        </footer>
+    </section>
+    </div>
+    <script src="scripts/currentdate.js"></script>
+
+    <script src="scripts/home.js"></script>
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Home - Weather in the Wild</title>
+    <link href="https://fonts.googleapis.com/css?family=Martel+Sans|Rokkitt" rel="stylesheet">
+    <link href="styles/normalize.css" rel="stylesheet">
+    <link href="styles/small.css" rel="stylesheet">
+    <link href="styles/large.css" rel="stylesheet">
+    <link href="styles/medium.css" rel="stylesheet">
+    <script text="javascript" src="scripts/hamburger.js"></script>
+
+
+</head>
+
+<body>
+
+    <header class="containerHead clearfix">
+        <figure class="logo">
+            <img src="images/logo100w.jpg" alt="logo">
+
+
+
+        </figure>
+        <div>
+            <h1 class="center title">Weather in the Wild</h1>
+            <h2 class="center">We have the weather for your wilderness adventure!</h2>
+        </div>
+
+    </header>
+
+    <nav class="clearfix center">
+        <button onclick="toggleMenu()">&#9776;Menu</button>
+        <ul id="primaryNav" class="hide">
+            <li><a href="home.html" class="active">Home</a></li>
+            <li><a href="preston.html">Preston</a></li>
+            <li><a href="sodasprings.html">Soda Springs</a></li>
+            <li><a href="fishhaven.html">Fish Haven</a></li>
+            <li><a href="stormcenter.html">Storm Center</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+    <main>
+
+        <body>
+            <section id="home">
+                <article class="town">
+                    <h1>Preston</h1>
+                    <h2 id="prestonMotto"></h2>
+                    <p>
+                        Year Founded:
+                        <span id="yearFoundedPreston"></span>
+                    </p>
+                    <p>
+                        Population:
+                        <span id="populationPreston"></span>
+                    </p>
+                    <p>
+                        Annual Rain Fall:
+                        <span id="averageRainPreston"></span>
+                        inches
+                    </p>
+                    <img src="images/town1.400w.jpg" class="homePage" alt="Preston">
+                </article>
+
+                <article class="town">
+                    <h1>Fish Haven</h1>
+                    <h2 id="FishHavenMotto"></h2>
+                    <p>
+                        Year Founded:
+                        <span id="yearFoundedFishHaven"></span>
+                    </p>
+                    <p>
+                        Population:
+                        <span id="populationFishHaven"></span>
+                    </p>
+                    <p>
+                        Annual Rain Fall:
+                        <span id="averageRainFishHaven"></span>
+                        inches
+                    </p>
+                    <img src="images/town2.400w.jpg" class="homePage" alt="Fish Haven">
+                </article>
+
+                <article class="town">
+                    <h1>Soda Springs</h1>
+                    <h2 id="SodaMotto"></h2>
+                    <p>
+                        Year Founded:
+                        <span id="yearFoundedSoda"></span>
+                    </p>
+                    <p>
+                        Population:
+                        <span id="populationSoda"></span>
+                    </p>
+                    <p>
+                        Annual Rain Fall:
+                        <span id="averageRainSoda"></span>
+                        inches
+                    </p>
+                    <img src="images/town3.400w.jpg" class="homePage" alt="Soda Springs">
+                </article>
+            </section>
+
+            <section class="sec2">
+                <article>
+                    <h1>Fresh Air and Fun</h1>
+                    <h2>by Avery Lee and Josie Moody</h2>
+                    <p>
+                        Spring has come, warm weather is on the way, but the mountains seem to be frozen in winter.
+                        The temperatures are ranging from 25-39 degrees, perfect weather for sledding or just
+                        good old snow ball fights. Its easy to enjoy the beautiful weather. Just head on up the
+                        nearest mountain.
+                        <br>
+                        <br>
+                        For example the Sawtooths, the Walkingtons, and the Pendletons are all great spots to visit.
+                        They even have small picnic benches to rest and have some lunch. Kick off your spring with some
+                        fresh mountain air.
+                    </p>
+                </article>
+                <figure class="story">
+                    <img src="images/saplingsmall.jpg" alt="sapling"
+                        srcset="images/saplingsmall.jpg 400w, images/saplinglarge.jpg 1600w">
+                </figure>
+
+            </section>
+            <section class="contact">
+
+
+
+                <article>
+                    <h1 class="center">Contact Us!</h1>
+                    <p class="center">Phone Number: 1 800-222-3333<br>
+                        Email: weatherinthewild@weather.org<br>
+                        Address: PO Box 22333<br>
+                        Preston, Idaho 83263</p>
+                </article>
+
+            </section>
+
+        </body>
+
+    </main>
+    <section class="sec4">
+        <footer class="center">
+            <p>
+                &copy; <span id="updateYear"></span> || Jenni Moody || CIT230
+                <br>
+                <span id="currentDay"></span>, <span id="currentDate"></span> <span id="currentMonth"></span>
+                <span id="currentYear"></span>
+            </p>
+
+        </footer>
+    </section>
+    </div>
+    <script src="scripts/currentdate.js"></script>
+
+    <script src="scripts/home.js"></script>
+
+
+
+
+
+</body>
+
+</html>
