@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Temple Inn & Suites - Home</title>
+    <link href="https://fonts.googleapis.com/css?family=Cinzel|Montserrat" rel="stylesheet">
+    <link href="styles/normalize.css" rel="stylesheet">
+    <link href="styles/small.css" rel="stylesheet">
+    <link href="styles/large.css" rel="stylesheet">
+    <link href="styles/medium.css" rel="stylesheet">
+    <script text="javascript" src="scripts/hamburger.js"></script>
+</head>
+<header class="containerHead clearfix">
+    <figure>
+            <img class="logo" src="images/logo150w.jpg" alt="logo">
+
+
+
+    </figure>
+    <div id="title">
+        <h1 class="center">Temple Inn & Suites</h1>
+        <h2 class="center">Peace and comfort with every stay.</h2>
+    </div>
+
+</header>
+
+<nav class="clearfix center">
+    <button onclick="toggleMenu()">&#9776;Menu</button>
+    <ul id="primaryNav" class="hide">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="reservations.html">Reservations</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="temples.html" class="active">Temples</a></li>
+        <li><a href="contacts.html">Contacts</a></li>
+    </ul>
+</nav>
+
+<body>
+    <main>
+
+        <body>
+            <section id="temples">
+                <article class="temple">
+                    <h2>Meridian Idaho Temple</h2>
+                    <img src="images/meridiantemplemedium.jpg" 
+                    srcset="images/meridiantemplesmall.jpg 400w, images/meridiantemplemedium.jpg 1600w" class="templePic" alt="Meridian Temple">
+                    <br>
+                    <h3>Address</h3>
+                    <p>7355 N Linder Rd <br>
+                        Meridian, ID 83646
+
+                    </p>
+                <br>
+                    <h3>Phone Number</h3>
+                    <p>(208) 957-7300
+                    </p>
+
+                    <br>
+                    <h3>Services</h3>
+                    <p>No clothing rental available<br>
+                        No cafeteria available<br>
+                        No patron housing available<br>
+                        No distribution center nearby
+                    </p>
+                    <br>
+                    <h3>History</h3>
+                    <p>Announced: April 2, 2011<br>
+                        Groundbreaking: August 23, 2014<br>
+                        Dedicated: November 19, 2017
+
+                    </p>
+
+                    <br>
+                    <h3>Ordinance Schedule</h3>
+                    <p>Baptims: 5:15 AM - 9:00 PM <br>
+                        Initiatories: 5:30 AM - 9:00 PM <br>
+                        Endowments: 5:15 AM - 7:30 PM <br>
+                        Sealings: 6:00 AM - 9:00 PM </p>
+                        <br>
+                    <h3>Session Schedule</h3>
+                    <p> Sessions every 45 minutes beginning <br>at 5:15 AM and ending at 7:30 PM.
+                    </p>
+                    <br>
+                    <h3> Temple Closures</h3>
+                    <p><span id="closures"></span>
+                    </p>
+
+                    <br>
+
+                    <div class="meridian-weatherSummary">
+                        <h3>Current Weather</h3>
+                        <div>
+                            <p><span>Currently: </span><span id="meridian-current-weather"></span></p>
+                        </div>
+                        <div>
+                            <p><span>Temperature: </span><span id="meridian-current-temp"></span>&deg; F</p>
+                        </div>
+                        <div>
+                            <p><span>Humidity: </span><span id="meridian-current-humidity"></span> %</p>
+                        </div>
+                        <div>
+                            <p><span>Wind Speed: </span><span id="meridian-current-windspeed"></span> mph</p>
+                        </div>
+                        <div>
+                            <p><span>Wind Chill: </span><span id="meridian-windChill"></span>&deg; F</p>
+                        </div>
+
+                    </div>
+
+                    <br>
+                   
+                </article>
+                <article class="temple">
+                    <h2>Salt Lake Temple</h2>
+                    <img src="images/saltlaketemplemedium.jpg" 
+                    srcset="images/saltlaketemplesmall.jpg 400w, images/saltlaketemplemedium.jpg 1600w" class="templePic" alt="Salt Lake Temple">
+                    <br>
+                    <h3>Address</h3>
+                        <p>50 W North Temple Street<br>
+                       Salt Lake City, UT 84150
+
+                    </p>
+                    <br>
+                    <h3>Phone Number</h3>
+                    <p>(801) 240-2640
+                    </p>
+
+                    <br>
+                    <h3>Services</h3>
+                    <p>Clothing rental available<br>
+                        Cafeteria available<br>
+                        No patron housing available<br>
+                        Distribution center nearby
+                    </p>
+                    <br>
+                    <h3>History</h3>
+                    <p>Announced: July 28, 1847<br>
+                        Groundbreaking: February 14, 1853<br>
+                        Dedicated: April 6, 1893
+
+                    </p>
+
+                    <br>
+                    <h3>Ordinance Schedule</h3>
+                    <p>Baptims: 5:00 AM - 8:00 PM <br>
+                        Initiatories: 6:00 AM - 8:00 PM <br>
+                        Endowments: 6:00 AM - 7:00 PM <br>
+                        Sealings: 7:00 AM - 8:00 PM </p>
+                        <br>
+                    <h3>Session Schedule</h3>
+                    <p> Sessions every hour beginning at <br>6:00 AM and ending at 7:00 PM.
+                    </p>
+                    <br>
+                    <h3> Temple Closures</h3>
+                    <p><span id="closures"></span>
+                    </p>
+
+
+                    <br>
+                    <div class="weatherSummary">
+                        <h3>Current Weather</h3>
+                        <div>
+                            <p><span>Currently: </span><span id="current-weather"></span></p>
+                        </div>
+                        <div>
+                            <p><span>Temperature: </span><span id="current-temp"></span>&deg; F</p>
+                        </div>
+                        <div>
+                            <p><span>Humidity: </span><span id="current-humidity"></span> %</p>
+                        </div>
+                        <div>
+                            <p><span>Wind Speed: </span><span id="current-windspeed"></span> mph</p>
+                        </div>
+                        <div>
+                            <p><span>Wind Chill: </span><span id="windChill"></span>&deg; F</p>
+                        </div>
+
+                    </div>
+
+                    <br>
+                    
+                </article>
+                <article class="temple">
+                    <h2>Nauvoo Temple</h2>
+                    <img src="images/nauvootemplemedium.jpg" 
+                    srcset="images/nauvootemplesmall.jpg 400w, images/nauvootemplemedium.jpg 1600w" class="templePic" alt="Nauvoo Temple">
+                    <br>
+                    <h3>Address</h3>
+                    <p>50 N Wells Street <br>
+                        Nauvoo, IL 62354
+
+                    </p>
+                    <br>
+                    <h3>Phone Number</h3>
+                    <p>(217) 453-6252
+                    </p>
+                    <br>
+                    <h3>Services</h3>
+                    <p>Clothing rental available<br>
+                        No cafeteria available<br>
+                        No patron housing available<br>
+                        No distribution center nearby
+                    </p>
+                    <br>
+                    <h3>History</h3>
+                    <p>Announced: April 4, 1999<br>
+                        Groundbreaking: October 24, 1999<br>
+                        Dedicated: June 27, 2002
+
+                    </p>
+
+                    <br>
+                    <h3>Ordinance Schedule</h3>
+                    <p>Baptims: 9:00 AM - 2:00 PM <br>
+                        Initiatories: 9:00 AM - 2:00 PM <br>
+                        Endowments: 9:00 AM - 12:00 PM <br>
+                        Sealings: 9:00 AM - 2:00 PM </p>
+                        <br>
+                    <h3>Session Schedule</h3>
+                    <p> Sessions every hour beginning at <br>9:00 AM and ending at 12:00 PM.
+                    </p>
+                    <br>
+                    <h3> Temple Closures</h3>
+                    <p><span id="closures"></span>
+                    </p>
+
+
+                    <br>
+                    <div class="weatherSummary">
+                        <h3>Current Weather</h3>
+                        <div>
+                            <p><span>Currently: </span><span id="current-weather"></span></p>
+                        </div>
+                        <div>
+                            <p><span>Temperature: </span><span id="current-temp"></span>&deg; F</p>
+                        </div>
+                        <div>
+                            <p><span>Humidity: </span><span id="current-humidity"></span> %</p>
+                        </div>
+                        <div>
+                            <p><span>Wind Speed: </span><span id="current-windspeed"></span> mph</p>
+                        </div>
+                        <div>
+                            <p><span>Wind Chill: </span><span id="windChill"></span>&deg; F</p>
+                        </div>
+
+                    </div>
+
+
+                    
+                </article>
+                <article class="temple">
+                    <h2>Anchorage Alaska Temple</h2>
+                    <img src="images/anchoragetemplemedium.jpg" 
+                    srcset="images/anchoragetemplesmall.jpg 400w, images/anchoragetemplemedium.jpg 1600w" class="templePic" alt="Anchorage Temple">
+                    <br>
+                    <h3>Address</h3>
+                    <p>13161 Brayton Drive<br>
+                        Anchorage, AK 99516
+
+                    </p>
+                    <br>
+                    <h3>Phone Number</h3>
+                    <p>(907) 348-7890
+                    </p>
+                    <br>
+                    <h3>Services</h3>
+                    <p>No clothing rental available<br>
+                        No cafeteria available<br>
+                        No patron housing available<br>
+                        No distribution center nearby
+                    </p>
+                    <br>
+                    <h3>History</h3>
+                    <p>Announced: October 4, 1997<br>
+                        Groundbreaking: April 17, 1997<br>
+                        Dedicated: January 9, 1999<br>
+                        Rededicated: February 8, 2004
+
+                    </p>
+
+                    <br>
+                    <h3>Ordinance Schedule</h3>
+                    <p>Baptims: 6:30 AM - 8:30 PM <br>
+                        Initiatories: 6:30 AM - 8:00 PM <br>
+                        Endowments: Check lds.org for details <br>
+                        Sealings: Check lds.org for details </p>
+                        <br>
+                    <h3>Session Schedule</h3>
+                    <p> Sessions scheduled at various times throughout <br>
+                        the week. Check lds.org for details
+                    </p>
+                    <br>
+                    <h3> Temple Closures</h3>
+                    <p><span id="closures"></span>
+                    </p>
+
+
+                    <br>
+                    <div class="weatherSummary">
+                        <h3>Current Weather</h3>
+                        <div>
+                            <p><span>Currently: </span><span id="current-weather"></span></p>
+                        </div>
+                        <div>
+                            <p><span>Temperature: </span><span id="current-temp"></span>&deg; F</p>
+                        </div>
+                        <div>
+                            <p><span>Humidity: </span><span id="current-humidity"></span> %</p>
+                        </div>
+                        <div>
+                            <p><span>Wind Speed: </span><span id="current-windspeed"></span> mph</p>
+                        </div>
+                        <div>
+                            <p><span>Wind Chill: </span><span id="windChill"></span>&deg; F</p>
+                        </div>
+
+                    </div>
+                    <br>
+
+                    
+                </article>
+            </section>
+
+        </body>
+        <section id="footer">
+            <footer class="center">
+                <p>
+                    &copy; <span id="updateYear"></span> || Jenni Moody || CIT230
+                    <br>
+                    <span id="currentDay"></span>, <span id="currentDate"></span> <span id="currentMonth"></span>
+                    <span id="currentYear"></span>
+                </p>
+
+            </footer>
+        </section>
+        </div>
+        <script src="scripts/currentdate.js"></script>
+        <script src="scripts/meridianWeather.js"></script>
+
+
+</html>

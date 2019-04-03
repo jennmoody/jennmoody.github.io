@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Temple Inn & Suites - Home</title>
+    <link href="https://fonts.googleapis.com/css?family=Cinzel|Montserrat" rel="stylesheet">
+    <link href="styles/normalize.css" rel="stylesheet">
+    <link href="styles/small.css" rel="stylesheet">
+    <link href="styles/large.css" rel="stylesheet">
+    <link href="styles/medium.css" rel="stylesheet">
+    <script text="javascript" src="scripts/hamburger.js"></script>
+</head>
+<header class="containerHead clearfix">
+        <figure>
+                <img class="logo" src="images/logo150w.jpg" alt="logo">
+
+
+
+        </figure>
+        <div id="title">
+            <h1 class="center">Temple Inn & Suites</h1>
+            <h2 class="center">Peace and comfort with every stay.</h2>
+        </div>
+
+    </header>
+
+    <nav class="clearfix center">
+        <button onclick="toggleMenu()">&#9776;Menu</button>
+        <ul id="primaryNav" class="hide">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="reservations.html" class="active">Reservations</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="temples.html">Temples</a></li>
+            <li><a href="contacts.html">Contacts</a></li>
+        </ul>
+    </nav>
+    <body>
+    <main class="form">
+
+            <h1>Make your reservation today!</h1>
+            <h2>Fill out the form below:</h2>
+            <form method="get" action="thanks.html">
+    
+                <fieldset>
+                    <legend>Customer Information</legend>
+                    <label class="top">First Name* <input type="text" name="fname" required></label>
+                    <label class="top">Last Name* <input type="text" name="lname" required></label>
+                    <label class="top">Phone* <input type="tel" name="phone" placeholder="1235551234" required></label>
+                    <label class="top">Email* <input type="email" name="email" placeholder="someone@gmail.com" required></label>
+                    <label class="top">Address* <input type="text" name="address" required></label>
+                    <label class="top">Zipcode* <input type="text" name="zipcode" required></label>
+                </fieldset>
+                <fieldset>
+                    <legend>Reservation Information</legend>
+                    <label class="top">Check-in Date<input type="date" name="completedDate" required></label>
+                    <label class="top">Check-out Date<input type="date" name="completedDate" required></label>
+                    <label class="top">Location
+                        <input list="location" name="location"required>
+                        <datalist id="location">
+                            <option value="Meridian Temple in Idaho">
+                            <option value="Salt Lake Temple in Utah">
+                            <option value="Nauvoo Temple in Illinois">
+                            <option value="Anchorage Temple in Alaska">
+                        </datalist>
+                    </label>
+    
+                    <label class="top">Number of Guests (1-8)</label>
+                    <span><input type="range" name="points" min="1" max="8" oninput="adjustRating(this.value)"
+                            onchange="adjustRating(this.value)"></span>
+                    <span id="ratingvalue">4</span><br>
+                    <label class="top">Room Request
+                        <select name="room" required>
+                            <option value="">Select Room &#9662;</option>
+                            <option value="singleQueen">Single Queen - Sleeps 2</option>
+                            <option value="singleKing">Single King - Sleeps 2</option>
+                            <option value="doubleQueen">Double Queen - Sleep 4</option>
+                            <option value="doubleQueenSofa">Double Queen plus Sofa Bed - Sleeps 6</option>
+                            <option value="jrSuite">Junior Suite - Sleeps 6 plus Kitchenette</option>
+                            <option value="deluxeSuite">Deluxe Suite - Sleep 8 plus Kitchenette</option>
+                        </select>
+                    </label>
+                    <div class="sbs">Traveling with Pets?</div>
+                    <label class="sbs"><input type="radio" name="yesNo" value="yes">Yes</label>
+                    <label class="sbs"><input type="radio" name="yesNo" value="no">No</label>
+    
+    
+    
+                    <textarea rows="4" cols="35" name="comment" form="usrform" class="comments">
+                       Special Requests:</textarea>
+                </fieldset>
+    
+                <input type="submit" value="Send to Reservations" class="submitBtn">
+    
+            </form>
+        </main>
+
+    
+</body>
+<section id="footer">
+        <footer class="center">
+            <p>
+                &copy; <span id="updateYear"></span> || Jenni Moody || CIT230
+                <br>
+                <span id="currentDay"></span>, <span id="currentDate"></span> <span id="currentMonth"></span>
+                <span id="currentYear"></span>
+            </p>
+
+        </footer>
+    </section>
+    </div>
+    <script src="scripts/currentdate.js"></script>
+    <script src="scripts/range.js"></script>
+
+    
+</html>
