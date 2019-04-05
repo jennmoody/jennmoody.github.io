@@ -1,5 +1,5 @@
 /* 35em is also 560px when basefont is 16px */
-@media screen and (min-width: 501px) and (max-width: 801px) {
+@media screen and (min-width: 501px) and (max-width: 800px) {
     header{
         height: 250px;
     }
@@ -10,10 +10,12 @@
         margin-right: auto;
         
      }
-     #title{
-        font-size: .8em;
+     #title h1{
+        font-size: 2em;
     }
 #title h2{
-  margin-top: -.5em;
+  margin-top: -.8em;
 }
+
 }
+

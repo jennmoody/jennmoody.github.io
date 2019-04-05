@@ -1,0 +1,300 @@
+h1 {
+    font-family: 'Cinzel', serif;
+}
+h3, p {
+   margin: 0;
+}
+body { 
+    background-color: #cbcae3;
+}
+p {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.center{
+    text-align: center;
+}
+/* -----------header ----------*/
+
+header {
+    margin-top: -1em;
+    background-color: #eaf4fb;
+    height: 180px;
+    color: #86828c;
+
+}
+header h2 {
+    font-family: 'Montserrat', sans-serif;
+       
+}
+ .heading {
+     color: #86828c;
+     font-size: 1.15em;
+ }
+
+
+
+.logo {
+   
+    border-radius: 25px;
+    border: 3px solid #86828C;
+    max-width: 25%;
+    
+}
+
+
+/* ----------navigation ----------*/
+
+nav button {
+      background: transparent;
+      border: none;
+      font-size: 1.6rem;
+      color: #fafbfd;
+
+  }
+ 
+nav {
+    background-color: #86828C;
+    font-family: 'Montserrat', sans-serif;
+      
+    }
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;   
+    
+}
+
+nav ul li a {
+    display: block;
+    padding: 1rem;
+    text-decoration: none;
+    color: #fafbfd;
+    border-top:1px solid rgba(0,0,0,0.3);
+    text-align: center;
+
+}
+
+nav ul li a:hover {background-color: rgba(0,0,0,0.4);}
+
+nav ul li .active {background-color: #ebe6c5; color: #86828c;}
+
+.repsonsive li { display: block;}
+
+nav ul.hide {display: none;}
+
+ul.subMenu {
+    position:absolute;
+    background-color:#86828C;
+    opacity:0;
+  }
+ 
+#primaryNav {
+    font-size: 1.25rem;
+    position: relative;
+}
+#primaryNav li:hover .subMenu{
+    opacity:1;
+}
+/*--------subnavbar--------*/
+/*.subnav {
+    float: left;
+    overflow: hidden;
+  }
+  
+  .subnav .subnavbtn {
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+  
+  .navbar a:hover, .subnav:hover .subnavbtn {
+    background-color: red;
+  }
+  
+  /*.subnav-content {
+    display: none;
+    position: absolute;
+    left: 0;
+    background-color: red;
+    width: 100%;
+    z-index: 1;
+  }
+  
+  .subnav-content a {
+    float: left;
+    color: white;
+    text-decoration: none;
+  }
+  
+  .subnav-content a:hover {
+    background-color: #eee;
+    color: black;
+  }
+  
+  .subnav:hover .subnav-content {
+    display: block;
+  }*/
+
+.banner {
+    width: 100%;
+}
+/*---------Temples-------*/
+#temples h2 {
+    font-family:'Cinzel', serif;
+}
+#temples h3 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.temple {
+    border: 3px solid #86828c;
+    background-color: #eaf4fb;
+    color: #86828c;
+    text-align: center;
+    margin-bottom: 2%;
+
+}
+
+#temples {
+    margin: 2%;
+}
+.templePic {
+    width: 96%;
+}
+
+/*---------reservation---------*/
+.form {
+    background-color: #86828c;
+    color:#fafbfd;
+    font-family: 'Montserrat', sans-serif;
+    margin: 2%;
+}
+.form h1 {
+    padding-top: 2%;
+    margin: 2%;
+
+} 
+
+.form h2 {
+    margin: 2%;
+}
+form fieldset {
+    margin: 2rem 2%;
+    border: 1px solid #ebe6c5;
+    padding: .5em 2%;
+}
+form legend {
+    margin: 0 1rem;
+    padding: 0 .5rem;
+}
+form label.top, form div {
+    display: block;
+    padding-top: 1rem;
+
+}
+form label.top input, form label.top select {
+    -webkit-appearance: none;
+    display: block;
+    font-size: 1rem;
+    padding: .75rem;
+    color: #86828c;
+    width: 100%;
+    max-width: 15rem;
+    
+}
+form label.sbs {
+    display: block;
+    padding: .75rem 0;
+    color: #fafbfd;
+}
+form input.submitBtn {
+    border: none;
+    background-color: #ebe6c5;
+    padding: .75rem 1.5rem;
+    margin: 0 0 2rem 4%;
+    width: 96%;
+    max-width: 15rem;
+}
+form label.top input:required {
+    border-left:#B3003B solid 6px;
+    
+
+}
+form label.top input:required:valid {
+    border-left: #cbcae3 solid 6px;
+}
+
+.thankyou {
+    background-color: #cbcae3;
+    color: #fafbfd;
+    margin: 2%;
+    padding: 1em;
+
+}
+.thankyou p {
+    font-size: 1.25rem;
+}
+/*---------contacts-------*/
+.contact { 
+    background-color: #86828C;
+    color: #fafbfd;
+    margin: 2%;
+    font-size: 1rem;
+    padding: 1em;
+}
+.contact h2{
+    font-family: 'Montserrat', sans-serif;
+}
+.contact p {
+    margin-top: -.8em;
+}
+iframe {width: 100%; height: 300px;}
+
+/*---------footer-------*/
+
+#footer {
+    background-color: #86828C;
+    color: #fafbfd;
+    font-family: 'Montsarrat', sans-serif;
+   
+
+}
+
+@media screen and (max-width: 500px) {
+    header {
+        height: 200px;
+          
+    }
+  
+    img.logo{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        
+     }
+
+        #title{
+            font-size: .8em;
+        }
+  #title h2{
+      margin-top: -.5em;
+  }
+  iframe {
+      margin-top: 4%;
+  }
+   
+}
+/* ----Clearfix: Force an Element not to collapse ----*/
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+
+}

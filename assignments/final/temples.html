@@ -11,6 +11,7 @@
     <link href="styles/small.css" rel="stylesheet">
     <link href="styles/large.css" rel="stylesheet">
     <link href="styles/medium.css" rel="stylesheet">
+    <link href="styles/ipad.css" rel="stylesheet">
     <script text="javascript" src="scripts/hamburger.js"></script>
 </head>
 <header class="containerHead clearfix">
@@ -28,16 +29,22 @@
 </header>
 
 <nav class="clearfix center">
-    <button onclick="toggleMenu()">&#9776;Menu</button>
-    <ul id="primaryNav" class="hide">
-        <li><a href="home.html">Home</a></li>
-        <li><a href="reservations.html">Reservations</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="temples.html" class="active">Temples</a></li>
-        <li><a href="contacts.html">Contacts</a></li>
-    </ul>
-</nav>
-
+        <button onclick="toggleMenu()">&#9776;Menu</button>
+        <ul class="hide" id="primaryNav">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="reservations.html">Reservations</a></li>
+            <li><a href="services.html">Services</a>
+                <ul class="subMenu">
+                    <li><a href="receptions.html">Receptions</a></li>
+                    <li><a href="missionary.html">Missionary Suites</a></li>
+                </ul>
+            </li>
+            <li><a href="temples.html" class="active">Temples</a></li>
+            <li><a href="contacts.html">Contacts</a></li>
+        </ul>
+    </nav>
+<img class="banner" src="images/meridian-idahobanner.jpg" alt="banner">
+<h1 class="center"><a id="reserveLink"href="reservations.html">Reserve Today!</a></h1>
 <body>
     <main>
 
@@ -45,8 +52,8 @@
             <section id="temples">
                 <article class="temple">
                     <h2>Meridian Idaho Temple</h2>
-                    <img src="images/meridiantemplemedium.jpg" 
-                    srcset="images/meridiantemplesmall.jpg 400w, images/meridiantemplemedium.jpg 1600w" class="templePic" alt="Meridian Temple">
+                    <img src="images/temple/meridiantemplemedium.jpg" 
+                    srcset="images/temple/meridiantemplesmall.jpg 400w, images/temple/meridiantemplemedium.jpg 1600w" class="templePic" alt="Meridian Temple">
                     <br>
                     <h3>Address</h3>
                     <p>7355 N Linder Rd <br>
@@ -115,8 +122,8 @@
                 </article>
                 <article class="temple">
                     <h2>Salt Lake Temple</h2>
-                    <img src="images/saltlaketemplemedium.jpg" 
-                    srcset="images/saltlaketemplesmall.jpg 400w, images/saltlaketemplemedium.jpg 1600w" class="templePic" alt="Salt Lake Temple">
+                    <img src="images/temple/saltlaketemplemedium.jpg" 
+                    srcset="images/temple/saltlaketemplesmall.jpg 400w, images/temple/saltlaketemplemedium.jpg 1600w" class="templePic" alt="Salt Lake Temple">
                     <br>
                     <h3>Address</h3>
                         <p>50 W North Temple Street<br>
@@ -185,8 +192,8 @@
                 </article>
                 <article class="temple">
                     <h2>Nauvoo Temple</h2>
-                    <img src="images/nauvootemplemedium.jpg" 
-                    srcset="images/nauvootemplesmall.jpg 400w, images/nauvootemplemedium.jpg 1600w" class="templePic" alt="Nauvoo Temple">
+                    <img src="images/temple/nauvootemplemedium.jpg" 
+                    srcset="images/temple.nauvootemplesmall.jpg 400w, images/temple/nauvootemplemedium.jpg 1600w" class="templePic" alt="Nauvoo Temple">
                     <br>
                     <h3>Address</h3>
                     <p>50 N Wells Street <br>
@@ -254,8 +261,8 @@
                 </article>
                 <article class="temple">
                     <h2>Anchorage Alaska Temple</h2>
-                    <img src="images/anchoragetemplemedium.jpg" 
-                    srcset="images/anchoragetemplesmall.jpg 400w, images/anchoragetemplemedium.jpg 1600w" class="templePic" alt="Anchorage Temple">
+                    <img src="images/temple/anchoragetemplemedium.jpg" 
+                    srcset="images/temple/anchoragetemplesmall.jpg 400w, images/temple/anchoragetemplemedium.jpg 1600w" class="templePic" alt="Anchorage Temple">
                     <br>
                     <h3>Address</h3>
                     <p>13161 Brayton Drive<br>

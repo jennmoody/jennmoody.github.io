@@ -9,6 +9,7 @@ body {
 }
 p {
     font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
 }
 
 .center{
@@ -36,7 +37,7 @@ header h2 {
 
 .logo {
    
-    border-radius: 25px;
+    border-radius: 20px;
     border: 3px solid #86828C;
     max-width: 25%;
     
@@ -84,9 +85,103 @@ nav ul li .active {background-color: #ebe6c5; color: #86828c;}
 
 nav ul.hide {display: none;}
 
+ul.subMenu {
+    position:absolute;
+    background-color:#86828C;
+    opacity:0;
+  }
+ 
 #primaryNav {
     font-size: 1.25rem;
+    position: relative;
 }
+#primaryNav li:hover .subMenu{
+    opacity:1;
+}
+.banner {
+    width: 100%;
+}
+
+   /*-------Home-------*/
+
+#imageContainer {
+    display: grid;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    
+}
+
+.shadow img {
+    width: 100%;
+    height: auto;
+
+}
+
+#reserveLink {
+    text-decoration:none;
+    background-color: #eaf4fb;
+    padding: .6rem;
+    color: #86828C;
+    border-radius: 20px;
+    border: 3px solid #86828C;
+    
+    
+
+
+}
+#intro {
+    background-color:#eaf4fb;
+    color: #86828C;
+    margin: 4%;
+    padding: 2%;
+    
+}
+
+#intro p{
+    padding: 0 2% 0 2%;
+}
+#free {
+    background-color:#eaf4fb;
+    color: #86828c;
+    margin: 4%;
+    padding: 2%;
+    
+}
+#free li{
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
+}
+.sec1 h2 {
+    font-family:'Cinzel', serif;
+
+}
+
+/*---------Missionary------*/
+#missionarySuite {
+    display: grid;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    
+}
+
+/*--------Reception-------*/
+#reception1 {
+    background-color: #86828C;
+    margin: 2%;
+}
+#reception1 img{
+    width: 99%;
+}
+.wedding {
+    background-color: #eafbfd;
+    margin: 2%;  
+    color: #86828C;
+    padding: 4%;
+}
+.wedding h2 {
+    font-family:'Cinzel', serif;
+}
+
 /*---------Temples-------*/
 #temples h2 {
     font-family:'Cinzel', serif;
@@ -96,7 +191,8 @@ nav ul.hide {display: none;}
 }
 
 .temple {
-    border: 3px solid #86828c;
+    /*border: 3px solid #86828c;
+    border-radius: 20px;*/
     background-color: #eaf4fb;
     color: #86828c;
     text-align: center;
@@ -169,7 +265,15 @@ form label.top input:required {
     
 
 }
+form label.top select:required {
+    border-left:#B3003B solid 6px;
+    
+
+}
 form label.top input:required:valid {
+    border-left: #cbcae3 solid 6px;
+}
+form label.top select:required:valid {
     border-left: #cbcae3 solid 6px;
 }
 
@@ -182,6 +286,9 @@ form label.top input:required:valid {
 }
 .thankyou p {
     font-size: 1.25rem;
+}
+.thankyou h1 {
+    margin-top: -.5em;
 }
 /*---------contacts-------*/
 .contact { 
@@ -222,12 +329,17 @@ iframe {width: 100%; height: 300px;}
         
      }
 
-        #title{
-            font-size: .8em;
+        #title h1{
+            font-size: 2em;
         }
   #title h2{
-      margin-top: -.5em;
+      font-size: 1em;
+      margin-top: -1em;
   }
+ 
+
+
+/*--------Contacts-------*/
   iframe {
       margin-top: 4%;
   }

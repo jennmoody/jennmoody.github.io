@@ -1,0 +1,101 @@
+@media screen and (min-width: 801px) and (max-width: 1024px) {
+       /*---------header-----------*/
+   
+       .logo {
+        margin-top: 1.2%;
+        left: 8%;
+        max-width: 25%;
+        position: absolute;
+    }
+    #title h1{
+        margin-top: -.5em;
+        padding: 1em;
+        font-size: 3em;
+    }
+    #title h2{
+        margin-top: -3em;
+       
+    }
+
+    /*-----------navigation----------*/
+    nav {
+        background-color: #86828c;
+    }
+    #primaryNav {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+    }
+    nav button {display: none;}
+    
+        nav ul li a {
+        border: 1px solid rgba(0,0,0,0.3);   
+        }
+
+
+           /*--------home-------*/
+
+    #temples {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 2em;
+        margin: 2%;
+    }
+    #imageContainer {
+        grid-template-columns: 1fr 1fr 1fr;
+    }   
+
+    .shadow:hover {
+        box-shadow: 10px 10px grey;
+    }
+    .sec1 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 2.5%;
+    }
+  #reserveLink {
+  position: absolute;
+  top: 25%;
+  right: 10%;
+  }
+
+  #intro {
+    margin: 0 0 2% 5.2%;
+  }
+  #free {
+    margin: 0 5.2% 2% 0;
+  } 
+    
+   /*--------Missionary-----*/
+#missionarySuite {
+    grid-template-columns: 1fr 1fr;
+} 
+/*----------Reception------*/
+#reception1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    
+    
+}
+
+    /*--------contacts-----*/
+    
+    iframe {
+        margin: 0;
+    }
+    .contact {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 1em;
+        margin: 2%;
+    }
+
+    .contact p {
+        font-size: 1.25em;
+        
+    } 
+    
+   
+}

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,32 +11,39 @@
     <link href="styles/small.css" rel="stylesheet">
     <link href="styles/large.css" rel="stylesheet">
     <link href="styles/medium.css" rel="stylesheet">
+    <link href="styles/ipad.css" rel="stylesheet">
     <script text="javascript" src="scripts/hamburger.js"></script>
 </head>
 <header class="containerHead clearfix">
-        <figure>
-                <img class="logo" src="images/logo150w.jpg" alt="logo">
+    <figure>
+            <img class="logo" src="images/logo150w.jpg" alt="logo">
 
 
 
-        </figure>
-        <div id="title"> 
-            <h1 class="center">Temple Inn & Suites</h1>
-            <h2 class="center">Peace and comfort with every stay.</h2>
-        </div>
+    </figure>
+    <div id="title">
+        <h1 class="center">Temple Inn & Suites</h1>
+        <h2 class="center">Peace and comfort with every stay.</h2>
+    </div>
 
-    </header>
+</header>
 
-    <nav class="clearfix center">
+<nav class="clearfix center">
         <button onclick="toggleMenu()">&#9776;Menu</button>
-        <ul id="primaryNav" class="hide">
+        <ul class="hide" id="primaryNav">
             <li><a href="home.html">Home</a></li>
-            <li><a href="reservations.html"class="active">Reservations</a></li>
-            <li><a href="services.html">Services</a></li>
+            <li><a href="reservations.html">Reservations</a></li>
+            <li><a href="services.html">Services</a>
+                <ul class="subMenu">
+                    <li><a href="receptions.html">Receptions</a></li>
+                    <li><a href="missionary.html">Missionary Suites</a></li>
+                </ul>
+            </li>
             <li><a href="temples.html">Temples</a></li>
             <li><a href="contacts.html">Contacts</a></li>
         </ul>
     </nav>
+<img class="banner" src="images/thankyoubanner.jpg" alt="banner">
 <body>
         <main>
                 <section class="thankyou">

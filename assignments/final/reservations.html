@@ -10,6 +10,7 @@
     <link href="styles/small.css" rel="stylesheet">
     <link href="styles/large.css" rel="stylesheet">
     <link href="styles/medium.css" rel="stylesheet">
+    <link href="styles/ipad.css" rel="stylesheet">
     <script text="javascript" src="scripts/hamburger.js"></script>
 </head>
 <header class="containerHead clearfix">
@@ -27,15 +28,22 @@
     </header>
 
     <nav class="clearfix center">
-        <button onclick="toggleMenu()">&#9776;Menu</button>
-        <ul id="primaryNav" class="hide">
-            <li><a href="home.html">Home</a></li>
-            <li><a href="reservations.html" class="active">Reservations</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="temples.html">Temples</a></li>
-            <li><a href="contacts.html">Contacts</a></li>
-        </ul>
-    </nav>
+            <button onclick="toggleMenu()">&#9776;Menu</button>
+            <ul class="hide" id="primaryNav">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="reservations.html" class="active">Reservations</a></li>
+                <li><a href="services.html">Services</a>
+                    <ul class="subMenu">
+                        <li><a href="receptions.html">Receptions</a></li>
+                        <li><a href="missionary.html">Missionary Suites</a></li>
+                    </ul>
+                </li>
+                <li><a href="temples.html">Temples</a></li>
+                <li><a href="contacts.html">Contacts</a></li>
+            </ul>
+        </nav>
+    <img class="banner" src="images/laptopbanner.jpg" alt="banner">
+    <h1 class="center"><a id="reserveLink"href="reservations.html">Reserve Today!</a></h1>
     <body>
     <main class="form">
 
@@ -50,6 +58,7 @@
                     <label class="top">Phone* <input type="tel" name="phone" placeholder="1235551234" required></label>
                     <label class="top">Email* <input type="email" name="email" placeholder="someone@gmail.com" required></label>
                     <label class="top">Address* <input type="text" name="address" required></label>
+                    <label class="top">State/Country* <input type="text" name="address" required></label>
                     <label class="top">Zipcode* <input type="text" name="zipcode" required></label>
                 </fieldset>
                 <fieldset>

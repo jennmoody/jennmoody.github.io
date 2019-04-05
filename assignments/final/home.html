@@ -10,32 +10,141 @@
     <link href="styles/small.css" rel="stylesheet">
     <link href="styles/large.css" rel="stylesheet">
     <link href="styles/medium.css" rel="stylesheet">
+    <link href="styles/ipad.css" rel="stylesheet">
+
     <script text="javascript" src="scripts/hamburger.js"></script>
 </head>
 <header class="clearfix">
+       
         <figure>
-            <img class="logo" src="images/logo150w.jpg" alt="logo">             
+            <img class="logo" src="images/logo150w.jpg" alt="logo">   
+                      
 
         </figure>
+        
         <div id="title">
+                
             <h1 class="center">Temple Inn & Suites</h1>
             <h2 class="center">Peace and comfort with every stay.</h2>
+         
         </div>
 
     </header>
-
+   
     <nav class="clearfix center">
-        <button onclick="toggleMenu()">&#9776;Menu</button>
-        <ul id="primaryNav" class="hide">
-            <li><a href="home.html" class="active">Home</a></li>
-            <li><a href="reservations.html">Reservations</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="temples.html">Temples</a></li>
-            <li><a href="contacts.html">Contacts</a></li>
-        </ul>
-    </nav>
+            <button onclick="toggleMenu()">&#9776;Menu</button>
+            <ul class="hide" id="primaryNav">
+                <li><a href="home.html" class="active">Home</a></li>
+                <li><a href="reservations.html">Reservations</a></li>
+                <li><a href="services.html">Services</a>
+                    <ul class="subMenu">
+                        <li><a href="receptions.html">Receptions</a></li>
+                        <li><a href="missionary.html">Missionary Suites</a></li>
+                    </ul>
+                </li>
+                <li><a href="temples.html">Temples</a></li>
+                <li><a href="contacts.html">Contacts</a></li>
+            </ul>
+        </nav>
+    <img class="banner" src="images/roombanner.jpg" alt="banner">
+    <h1 class="center"><a id="reserveLink"href="reservations.html">Reserve Today!</a></h1>
 <body>
-    
+        <main>
+
+            <section class="sec1">
+            <div id="intro">
+                <h2>At a Glance</h2>
+                <p>Temple Inn & Suites is a full-service hotel that offers a relaxing stay with
+                    an array of amentities designed with comfort and convenience in mind. Each 
+                    location is carefully situated within walking distance of a Church of Jesus 
+                    Christ of Latter Day Saints' Temple, specializing in accommadations for those 
+                    visiting the temple as well as anyone needing a peaceful nights' rest.
+                </p>
+
+            </div>
+            <div id="free">
+                <h2>Free Amenities</h2>
+               <ul>
+                    <li>Breakfast</li>
+                    <li>24-Hour Fitness Center</li>
+                    <li>Indoor Pool</li>
+                    <li>High-speed Wifi and Smart TVs</li>
+                    <li>Parking</li>
+                    <li>Shuttle Service</li>
+                    <li>Family History Consultation and Ordinance Card Printing</li>
+                </ul>
+            </div>
+        </section>
+          
+                <div>
+                    <section id="sec2">
+                           
+                        <div id="imageContainer">
+                            <figure class="shadow">
+                                    <a href="services.html">
+                                <img src="images/Amenities/roomservice400w.jpg" alt="breakfast">
+                                </a>
+                                <figcaption>Delicious Complimentary Breakfast</figcaption>
+                            </figure>
+                            <figure class="shadow">
+                                    <a href="services.html">
+                                <img src="images/Amenities/gym400w.jpg" alt="treadmills">
+                                </a>
+        
+                                <figcaption>24-Hour Fitness Center</figcaption>
+                            </figure>
+                            <figure class="shadow">
+                                    <a href="services.html">
+                                <img src="images/Amenities/indoorpool400w.jpg" alt="indoor pool">
+                            </a>
+                                <figcaption>Heated Indoor Pool with Diving Board</figcaption>
+                               
+                            </figure>
+                            <figure class="shadow">
+                                <a href="reservations.html">
+                                    <img src="images/Amenities/hotelroom400w.jpg" alt="hotel room">
+                                    </a>
+                                    <figcaption>Beautiful Spacious Rooms</figcaption>
+                                </figure>
+                            <figure class="shadow">
+                                    <a href="services.html">
+                                    <img src="images/Amenities/wifi400w.jpg" alt="computer">
+                                </a>
+                                    <figcaption>Free High-Speed Wifi</figcaption>
+                                
+                                </figure>
+                                <figure class="shadow">
+                                        <a href="services.html">
+                                        <img src="images/Amenities/childcare400w.jpg" alt="towels">
+                                    </a>
+                                        <figcaption>Childcare During Temple Hours</figcaption>
+                                       
+                                    </figure>
+                                    <figure class="shadow">
+                                            <a href="receptions.html"> 
+                                                <img src="images/Amenities/receptionpic400w.jpg" alt="fancy table">
+                                            </a>
+                                            <figcaption>Reception Hall for Weddings and Parties</figcaption>
+                                        </figure>
+                                        <figure class="shadow">
+                                                <a href="services.html">
+                                                <img src="images/Amenities/familyhistory400w.jpg" alt="conference room">
+                                            </a>
+                                                <figcaption>Full-Service Family History Center</figcaption>
+                                                
+                                            </figure>
+                                            <figure class="shadow">
+                                                    <a href="missionary.html"> 
+                                                        <img src="images/Amenities/suitekitchen400w.jpg" alt="kitchen">
+                                                    </a>
+                                                    <figcaption>Long-Term Suites for Full-Time Missionaries</figcaption>
+                                                </figure>
+                                    
+                        
+                            </div>
+        
+                        </section>
+            </main>
 </body>
 <section id="footer">
         <footer class="center">

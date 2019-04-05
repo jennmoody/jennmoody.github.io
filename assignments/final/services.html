@@ -10,6 +10,7 @@
     <link href="styles/small.css" rel="stylesheet">
     <link href="styles/large.css" rel="stylesheet">
     <link href="styles/medium.css" rel="stylesheet">
+    <link href="styles/ipad.css" rel="stylesheet">
     <script text="javascript" src="scripts/hamburger.js"></script>
 </head>
 <header class="containerHead clearfix">
@@ -27,16 +28,76 @@
     </header>
 
     <nav class="clearfix center">
-        <button onclick="toggleMenu()">&#9776;Menu</button>
-        <ul id="primaryNav" class="hide">
-            <li><a href="home.html">Home</a></li>
-            <li><a href="reservations.html">Reservations</a></li>
-            <li><a href="services.html" class="active">Services</a></li>
-            <li><a href="temples.html">Temples</a></li>
-            <li><a href="contacts.html">Contacts</a></li>
-        </ul>
-    </nav>
+            <button onclick="toggleMenu()">&#9776;Menu</button>
+            <ul class="hide" id="primaryNav">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="reservations.html">Reservations</a></li>
+                <li><a href="services.html" class="active">Services</a>
+                    <ul class="subMenu">
+                        <li><a href="receptions.html">Receptions</a></li>
+                        <li><a href="missionary.html">Missionary Suites</a></li>
+                    </ul>
+                </li>
+                <li><a href="temples.html">Temples</a></li>
+                <li><a href="contacts.html">Contacts</a></li>
+            </ul>
+        </nav>
+    <img class="banner" src="images/workbanner.jpg" alt="banner">
+    <h1 class="center"><a id="reserveLink"href="reservations.html">Reserve Today!</a></h1>
 <body>
+        <div>
+                <section id="sec2">
+                       
+                    <div id="imageContainer">
+                        <figure class="shadow">
+                                <a href="services.html">
+                            <img src="images/Amenities/roomservice400w.jpg" alt="breakfast">
+                            </a>
+                            <figcaption>Delicious Complimentary Breakfast</figcaption>
+                        </figure>
+                        <figure class="shadow">
+                                <a href="services.html">
+                            <img src="images/Amenities/gym400w.jpg" alt="treadmills">
+                            </a>
+    
+                            <figcaption>24-Hour Fitness Center</figcaption>
+                        </figure>
+                        <figure class="shadow">
+                                <a href="services.html">
+                            <img src="images/Amenities/indoorpool400w.jpg" alt="indoor pool">
+                        </a>
+                            <figcaption>Heated Indoor Pool with Diving Board</figcaption>
+                           
+                        </figure>
+                        
+                        <figure class="shadow">
+                                <a href="services.html">
+                                <img src="images/Amenities/wifi400w.jpg" alt="computer">
+                            </a>
+                                <figcaption>Free High-Speed Wifi</figcaption>
+                            
+                            </figure>
+                            <figure class="shadow">
+                                    <a href="contacts.html">
+                                    <img src="images/Amenities/maidservice400w.jpg" alt="towels">
+                                </a>
+                                    <figcaption>Friendly Staff Available 24-Hours</figcaption>
+                                   
+                                </figure>
+                                
+                                    </figure>
+                                    <figure class="shadow">
+                                            <a href="services.html">
+                                            <img src="images/Amenities/familyhistory400w.jpg" alt="conference room">
+                                        </a>
+                                            <figcaption>Full-Service Family History Center</figcaption>
+                                            
+                                        </figure>
+                                       
+                                
+                    
+                        </div>
+    
     
 </body>
 <section id="footer">

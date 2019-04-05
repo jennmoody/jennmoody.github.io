@@ -1,20 +1,24 @@
+
 /* 64em is also 1028px when basefont is 16px */
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 1025px) {
    /*---------header-----------*/
    
     .logo {
-        margin-top: 1%;
-        left: 8%;
+        margin-top: 1.8%;
+        left: 15%;
         max-width: 25%;
         position: absolute;
     }
     #title h1{
+        font-size: 4em;
         margin-top: -.5em;
         padding: 1em;
     }
     #title h2{
-        margin-top: -2em;
+        margin-top: -4.5em;
+       
     }
+    
 /*-----------navigation----------*/
     nav {
     background-color: #86828c;
@@ -31,17 +35,55 @@ nav button {display: none;}
     nav ul li a {
     border: 1px solid rgba(0,0,0,0.3);   
     }
-   
+
 
     /*--------home-------*/
 
-    #temples {
+   
+    #imageContainer {
+        grid-template-columns: 1fr 1fr 1fr;
+    }   
+
+    .shadow:hover {
+        box-shadow: 10px 10px grey;
+    }
+    .sec1 {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-column-gap: 2em;
-        margin: 2%;
+        grid-column-gap: 2.5%;
     }
+  #reserveLink {
+  position: absolute;
+  top: 60%;
+  right: 10%;
+  }
+  #intro {
+    margin: 0 0 2% 5.2%;
+  }
+  #intro h2 {
+      font-size: 2em;
+  }
+  #free {
+    margin: 0 5.2% 2% 0;
+  }
+  #free h2 {
+      font-size: 2em;
+  }
 
+/*--------Missionary-----*/
+#missionarySuite {
+    grid-template-columns: 1fr 1fr;
+} 
+/*----------Reception------*/
+#reception1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    
+    
+}
+#reception1 h2 {
+    font-size: 2em;
+}
     /*--------contacts-----*/
     
     iframe {
@@ -58,6 +100,12 @@ nav button {display: none;}
         font-size: 1.25em;
         
     }
-
+/*---------Temples-------*/
+#temples {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 2em;
+    margin: 2%;
+}
 
 }
