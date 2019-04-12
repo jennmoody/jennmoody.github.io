@@ -308,8 +308,8 @@ ul.subMenu {
     width: 98%;
 }
 .formImages {
-    background-color:#fafbfd;
-    margin: 2%;
+    background-color: #86828C;
+    margin: 2% 2% 2% 0;
     
 
 }
@@ -317,7 +317,7 @@ ul.subMenu {
     background-color: #86828c;
     color:#fafbfd;
     font-family: 'Montserrat', sans-serif;
-    margin: 2%;
+    margin: 2% 0 2% 2%;
 }
 .form h1 {
     padding-top: 2%;
