@@ -38,11 +38,19 @@ nav button {display: none;}
 
 
     /*--------home-------*/
-
+    #homeImage {
+        font-size: 1.5em;
+    }
    
     #imageContainer {
         grid-template-columns: 1fr 1fr 1fr;
     }   
+    #services {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        
+
+    }
 
     .shadow:hover {
         box-shadow: 10px 10px grey;
@@ -69,19 +77,53 @@ nav button {display: none;}
   #free h2 {
       font-size: 2em;
   }
+#homePage {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 2%;
+}
+#homePage h2 {
+    margin-top: 6%;
+}
+
+
+/*--------services------*/
+
+#information h2 {
+    font-size: 2em;
+}
+#serviceImages {
+    grid-template-columns: 1fr 1fr;
+} 
+
 
   /*---------Reservations--------*/
-  .form {
-      width: 50%;
-  }
+  #reservations {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+
+
+.formImages img{
+    margin: 0 2% 0 8%;
+    width: 85%;
+}
 
 /*--------Missionary-----*/
 #missionarySuite {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
 } 
+#missionarySuite img {
+    width: 85%;
+}
+#missionaryPage {
+    grid-template-columns: 1fr 1fr;
+}
 /*----------Reception------*/
 #reception1 {
-    display: grid;
+   
     grid-template-columns: 1fr 1fr 1fr 1fr;
     
     
@@ -92,17 +134,20 @@ nav button {display: none;}
     /*--------contacts-----*/
     
     iframe {
-        margin: 0;
+        margin-top: 2%;
     }
-    .contact {
+    #contact {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-column-gap: 1em;
         margin: 2%;
+        font-size: .8em;
+       
     }
 
-    .contact p {
+    #contact p {
         font-size: 1.25em;
+    
         
     }
 /*---------Temples-------*/

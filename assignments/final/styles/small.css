@@ -19,7 +19,7 @@ p {
 
 header {
     margin-top: -1em;
-    background-color: #eaf4fb;
+    background-color: #fafbfd;
     height: 200px;
     color: #86828c;
 
@@ -86,7 +86,7 @@ nav ul li .active {background-color: #ebe6c5; color: #86828c;}
 nav ul.hide {display: none;}
 
 ul.subMenu {
-    position:absolute;
+    position: absolute;
     background-color:#86828C;
     opacity:0;
   }
@@ -119,7 +119,7 @@ ul.subMenu {
 
 #reserveLink {
     text-decoration:none;
-    background-color: #eaf4fb;
+    background-color: #fafbfd;
     padding: .6rem;
     color: #86828C;
     border-radius: 20px;
@@ -130,9 +130,9 @@ ul.subMenu {
 
 }
 #intro {
-    background-color:#eaf4fb;
+    background-color:#fafbfd;
     color: #86828C;
-    margin: 4%;
+    margin: 2%;
     padding: 2%;
     
 }
@@ -141,9 +141,9 @@ ul.subMenu {
     padding: 0 2% 0 2%;
 }
 #free {
-    background-color:#eaf4fb;
+    background-color:#fafbfd;
     color: #86828c;
-    margin: 4%;
+    margin: 2%;
     padding: 2%;
     
 }
@@ -155,25 +155,113 @@ ul.subMenu {
     font-family:'Cinzel', serif;
 
 }
+#homePage {
+    background-color: #86828c;
+    margin: 2%;
+    color: #fafbfd;
+    font-size: 1.15em;
+    padding: 2%;
+}
+#homePage h2 {
+    font-size: 1.7em;
+    font-family:'Cinzel', serif;
+
+}
+#homePage ul {
+    font-family: 'Montserrat', sans-serif;
+    list-style-type: none;
+    line-height: 2;
+   
+}
+#homePage img {
+    width: 98%;
+}
+
+
+/*--------services-------*/
+#services {
+    background-color: #fafbfd;
+    margin: 2%;
+    color:#86828C;
+}
+#services h2 {
+    font-family:'Cinzel', serif;
+}
+#information p {
+    padding: 0 6% 6% 6%;
+    margin-bottom: -4%;
+    
+}
+#information ul {
+    margin-top: -4%;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+#information li {
+    font-weight: bold;
+}
+#serviceImages {
+    display: grid;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-size: 1.25em;
+    
+    
+    
+}
+
 
 /*---------Missionary------*/
-#missionarySuite {
+#missionaryPage {
     display: grid;
+   
+
+}
+#missionarySuite {
     font-family: 'Montserrat', sans-serif;
     text-align: center;
     
 }
+#missionarySuite img{
+    width: 99%;
+}
+.missionComments {
+    margin-top: 1em;
+}
 
+#missionaryForm {
+    background-color:#86828C;
+    color: #fafbfd;
+    font-family: 'Montserrat', sans-serif;
+    margin: 2%;
+    padding: 2%;
+    
+}
+#suiteInfo {
+    background-color: #fafbfd;
+    color: #86828C;
+    margin: 2%;
+    padding: 2%;
+}
+#suiteInfo p {
+    padding: 4%;
+    line-height: 1.6;
+}
+#missionarySuite {
+    font-size: 1.25em;
+}
 /*--------Reception-------*/
+
 #reception1 {
     background-color: #86828C;
     margin: 2%;
+    display: grid;
 }
 #reception1 img{
     width: 99%;
 }
 .wedding {
-    background-color: #eafbfd;
+    background-color: #fafbfd;
     margin: 2%;  
     color: #86828C;
     padding: 4%;
@@ -181,6 +269,7 @@ ul.subMenu {
 .wedding h2 {
     font-family:'Cinzel', serif;
 }
+
 
 /*---------Temples-------*/
 #temples h2 {
@@ -191,9 +280,7 @@ ul.subMenu {
 }
 
 .temple {
-    /*border: 3px solid #86828c;
-    border-radius: 20px;*/
-    background-color: #eaf4fb;
+    background-color: #fafbfd;
     color: #86828c;
     text-align: center;
     margin-bottom: 2%;
@@ -206,8 +293,26 @@ ul.subMenu {
 .templePic {
     width: 96%;
 }
+.temple li{
+    list-style: none;
+    margin-left: -20%;
+}
 
 /*---------reservation---------*/
+#reservations {
+    display: grid;
+    grid-template-columns: 1fr;
+
+}
+.formImages img{
+    width: 98%;
+}
+.formImages {
+    background-color:#fafbfd;
+    margin: 2%;
+    
+
+}
 .form {
     background-color: #86828c;
     color:#fafbfd;
@@ -290,19 +395,24 @@ form label.top select:required:valid {
 .thankyou h1 {
     margin-top: -.5em;
 }
+
 /*---------contacts-------*/
-.contact { 
+#contact { 
+    display: grid;
+    grid-template-columns: 1fr;
     background-color: #86828C;
     color: #fafbfd;
     margin: 2%;
-    font-size: 1rem;
-    padding: 1em;
+    font-size: .8em;
+    
+  
 }
-.contact h2{
+#contact h2{
     font-family: 'Montserrat', sans-serif;
 }
-.contact p {
+#contact p {
     margin-top: -.8em;
+   
 }
 iframe {width: 100%; height: 300px;}
 
@@ -317,6 +427,9 @@ iframe {width: 100%; height: 300px;}
 }
 
 @media screen and (max-width: 500px) {
+    #missionaryPage {
+
+    }
     header {
         height: 200px;
           
@@ -337,7 +450,20 @@ iframe {width: 100%; height: 300px;}
       margin-top: -1em;
   }
  
+  #serviceImages img {
+    width: 99%;
+}
+#information {
+    padding: 2%;
+}
 
+.subMenu li{
+    
+    background-color: #cbcae3;
+}
+#missionarySuite img {
+    width: 99%;
+}
 
 /*--------Contacts-------*/
   iframe {

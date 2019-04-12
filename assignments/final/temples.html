@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Temple Inn & Suites - Home</title>
+    <title>Temple Inn & Suites - Temples</title>
     <link href="https://fonts.googleapis.com/css?family=Cinzel|Montserrat" rel="stylesheet">
     <link href="styles/normalize.css" rel="stylesheet">
     <link href="styles/small.css" rel="stylesheet">
@@ -16,7 +16,7 @@
 </head>
 <header class="containerHead clearfix">
     <figure>
-            <img class="logo" src="images/logo150w.jpg" alt="logo">
+        <img class="logo" src="images/logo150w.jpg" alt="logo">
 
 
 
@@ -29,38 +29,41 @@
 </header>
 
 <nav class="clearfix center">
-        <button onclick="toggleMenu()">&#9776;Menu</button>
-        <ul class="hide" id="primaryNav">
-            <li><a href="home.html">Home</a></li>
-            <li><a href="reservations.html">Reservations</a></li>
-            <li><a href="services.html">Services</a>
-                <ul class="subMenu">
-                    <li><a href="receptions.html">Receptions</a></li>
-                    <li><a href="missionary.html">Missionary Suites</a></li>
-                </ul>
-            </li>
-            <li><a href="temples.html" class="active">Temples</a></li>
-            <li><a href="contacts.html">Contacts</a></li>
-        </ul>
-    </nav>
+    <button onclick="toggleMenu()">&#9776;Menu</button>
+    <ul class="hide" id="primaryNav">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="reservations.html">Reservations</a></li>
+        <li><a href="services.html">Services</a>
+            <ul class="subMenu">
+                <li><a href="receptions.html">Receptions</a></li>
+                <li><a href="missionary.html">Missionary Suites</a></li>
+            </ul>
+        </li>
+        <li><a href="temples.html" class="active">Temples</a></li>
+        <li><a href="contacts.html">Contacts</a></li>
+    </ul>
+</nav>
 <img class="banner" src="images/meridian-idahobanner.jpg" alt="banner">
-<h1 class="center"><a id="reserveLink"href="reservations.html">Reserve Today!</a></h1>
+<h1 class="center"><a id="reserveLink" href="reservations.html">Reserve Today!</a></h1>
+
 <body>
     <main>
 
         <body>
             <section id="temples">
                 <article class="temple">
+                    <span id="templeName"></span>
                     <h2>Meridian Idaho Temple</h2>
-                    <img src="images/temple/meridiantemplemedium.jpg" 
-                    srcset="images/temple/meridiantemplesmall.jpg 400w, images/temple/meridiantemplemedium.jpg 1600w" class="templePic" alt="Meridian Temple">
+                    <img src="images/temple/meridiantemplemedium.jpg"
+                        srcset="images/temple/meridiantemplesmall.jpg 400w, images/temple/meridiantemplemedium.jpg 1600w"
+                        class="templePic" alt="Meridian Temple">
                     <br>
                     <h3>Address</h3>
                     <p>7355 N Linder Rd <br>
                         Meridian, ID 83646
 
                     </p>
-                <br>
+                    <br>
                     <h3>Phone Number</h3>
                     <p>(208) 957-7300
                     </p>
@@ -86,48 +89,39 @@
                         Initiatories: 5:30 AM - 9:00 PM <br>
                         Endowments: 5:15 AM - 7:30 PM <br>
                         Sealings: 6:00 AM - 9:00 PM </p>
-                        <br>
+                    <br>
                     <h3>Session Schedule</h3>
                     <p> Sessions every 45 minutes beginning <br>at 5:15 AM and ending at 7:30 PM.
                     </p>
                     <br>
                     <h3> Temple Closures</h3>
-                    <p><span id="closures"></span>
+                    <p><span id="templeClosures1"></span>
                     </p>
 
                     <br>
 
                     <div class="meridian-weatherSummary">
                         <h3>Current Weather</h3>
+
                         <div>
-                            <p><span>Currently: </span><span id="meridian-current-weather"></span></p>
+                            <p><span>Temperature: </span><span id="current-temp1"></span>&deg; F</p>
                         </div>
-                        <div>
-                            <p><span>Temperature: </span><span id="meridian-current-temp"></span>&deg; F</p>
-                        </div>
-                        <div>
-                            <p><span>Humidity: </span><span id="meridian-current-humidity"></span> %</p>
-                        </div>
-                        <div>
-                            <p><span>Wind Speed: </span><span id="meridian-current-windspeed"></span> mph</p>
-                        </div>
-                        <div>
-                            <p><span>Wind Chill: </span><span id="meridian-windChill"></span>&deg; F</p>
-                        </div>
+
 
                     </div>
 
                     <br>
-                   
+
                 </article>
                 <article class="temple">
                     <h2>Salt Lake Temple</h2>
-                    <img src="images/temple/saltlaketemplemedium.jpg" 
-                    srcset="images/temple/saltlaketemplesmall.jpg 400w, images/temple/saltlaketemplemedium.jpg 1600w" class="templePic" alt="Salt Lake Temple">
+                    <img src="images/temple/saltlaketemplemedium.jpg"
+                        srcset="images/temple/saltlaketemplesmall.jpg 400w, images/temple/saltlaketemplemedium.jpg 1600w"
+                        class="templePic" alt="Salt Lake Temple">
                     <br>
                     <h3>Address</h3>
-                        <p>50 W North Temple Street<br>
-                       Salt Lake City, UT 84150
+                    <p>50 W North Temple Street<br>
+                        Salt Lake City, UT 84150
 
                     </p>
                     <br>
@@ -156,44 +150,35 @@
                         Initiatories: 6:00 AM - 8:00 PM <br>
                         Endowments: 6:00 AM - 7:00 PM <br>
                         Sealings: 7:00 AM - 8:00 PM </p>
-                        <br>
+                    <br>
                     <h3>Session Schedule</h3>
                     <p> Sessions every hour beginning at <br>6:00 AM and ending at 7:00 PM.
                     </p>
                     <br>
                     <h3> Temple Closures</h3>
-                    <p><span id="closures"></span>
+                    <p><span id="templeClosures2"></span>
                     </p>
 
 
                     <br>
                     <div class="weatherSummary">
                         <h3>Current Weather</h3>
+
                         <div>
-                            <p><span>Currently: </span><span id="current-weather"></span></p>
+                            <p><span>Temperature: </span><span id="current-temp2"></span>&deg; F</p>
                         </div>
-                        <div>
-                            <p><span>Temperature: </span><span id="current-temp"></span>&deg; F</p>
-                        </div>
-                        <div>
-                            <p><span>Humidity: </span><span id="current-humidity"></span> %</p>
-                        </div>
-                        <div>
-                            <p><span>Wind Speed: </span><span id="current-windspeed"></span> mph</p>
-                        </div>
-                        <div>
-                            <p><span>Wind Chill: </span><span id="windChill"></span>&deg; F</p>
-                        </div>
+
 
                     </div>
 
                     <br>
-                    
+
                 </article>
                 <article class="temple">
                     <h2>Nauvoo Temple</h2>
-                    <img src="images/temple/nauvootemplemedium.jpg" 
-                    srcset="images/temple/nauvootemplesmall.jpg 400w, images/temple/nauvootemplemedium.jpg 1600w" class="templePic" alt="Nauvoo Temple">
+                    <img src="images/temple/nauvootemplemedium.jpg"
+                        srcset="images/temple/nauvootemplesmall.jpg 400w, images/temple/nauvootemplemedium.jpg 1600w"
+                        class="templePic" alt="Nauvoo Temple">
                     <br>
                     <h3>Address</h3>
                     <p>50 N Wells Street <br>
@@ -225,44 +210,35 @@
                         Initiatories: 9:00 AM - 2:00 PM <br>
                         Endowments: 9:00 AM - 12:00 PM <br>
                         Sealings: 9:00 AM - 2:00 PM </p>
-                        <br>
+                    <br>
                     <h3>Session Schedule</h3>
                     <p> Sessions every hour beginning at <br>9:00 AM and ending at 12:00 PM.
                     </p>
                     <br>
                     <h3> Temple Closures</h3>
-                    <p><span id="closures"></span>
+                    <p><span id="templeClosures3"></span>
                     </p>
 
 
                     <br>
                     <div class="weatherSummary">
                         <h3>Current Weather</h3>
+
                         <div>
-                            <p><span>Currently: </span><span id="current-weather"></span></p>
+                            <p><span>Temperature: </span><span id="current-temp3"></span>&deg; F</p>
                         </div>
-                        <div>
-                            <p><span>Temperature: </span><span id="current-temp"></span>&deg; F</p>
-                        </div>
-                        <div>
-                            <p><span>Humidity: </span><span id="current-humidity"></span> %</p>
-                        </div>
-                        <div>
-                            <p><span>Wind Speed: </span><span id="current-windspeed"></span> mph</p>
-                        </div>
-                        <div>
-                            <p><span>Wind Chill: </span><span id="windChill"></span>&deg; F</p>
-                        </div>
+
 
                     </div>
 
 
-                    
+
                 </article>
                 <article class="temple">
                     <h2>Anchorage Alaska Temple</h2>
-                    <img src="images/temple/anchoragetemplemedium.jpg" 
-                    srcset="images/temple/anchoragetemplesmall.jpg 400w, images/temple/anchoragetemplemedium.jpg 1600w" class="templePic" alt="Anchorage Temple">
+                    <img src="images/temple/anchoragetemplemedium.jpg"
+                        srcset="images/temple/anchoragetemplesmall.jpg 400w, images/temple/anchoragetemplemedium.jpg 1600w"
+                        class="templePic" alt="Anchorage Temple">
                     <br>
                     <h3>Address</h3>
                     <p>13161 Brayton Drive<br>
@@ -295,40 +271,31 @@
                         Initiatories: 6:30 AM - 8:00 PM <br>
                         Endowments: Check lds.org for details <br>
                         Sealings: Check lds.org for details </p>
-                        <br>
+                    <br>
                     <h3>Session Schedule</h3>
-                    <p> Sessions scheduled at various times throughout <br>
+                    <p> Sessions scheduled at various times throughout
                         the week. Check lds.org for details
                     </p>
                     <br>
                     <h3> Temple Closures</h3>
-                    <p><span id="closures"></span>
+                    <p><span id="templeClosures4"></span>
                     </p>
 
 
                     <br>
                     <div class="weatherSummary">
                         <h3>Current Weather</h3>
+
                         <div>
-                            <p><span>Currently: </span><span id="current-weather"></span></p>
+                            <p><span>Temperature: </span><span id="current-temp4"></span>&deg; F</p>
                         </div>
-                        <div>
-                            <p><span>Temperature: </span><span id="current-temp"></span>&deg; F</p>
-                        </div>
-                        <div>
-                            <p><span>Humidity: </span><span id="current-humidity"></span> %</p>
-                        </div>
-                        <div>
-                            <p><span>Wind Speed: </span><span id="current-windspeed"></span> mph</p>
-                        </div>
-                        <div>
-                            <p><span>Wind Chill: </span><span id="windChill"></span>&deg; F</p>
-                        </div>
+
+
 
                     </div>
                     <br>
 
-                    
+
                 </article>
             </section>
 
@@ -346,7 +313,10 @@
         </section>
         </div>
         <script src="scripts/currentdate.js"></script>
-        <script src="scripts/meridianWeather.js"></script>
+        <script src="scripts/temples.js"></script>
+        <script src="scripts/temp.js"></script>
+        
+
 
 
 </html>

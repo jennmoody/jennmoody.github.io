@@ -79,6 +79,20 @@
     
     
 }
+ /*---------Reservations--------*/
+ #reservations {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+
+}
+.formImages img{
+    margin: 0 2% 0 8%;
+    width: 85%;
+}
+
 
     /*--------contacts-----*/
     
@@ -98,4 +112,3 @@
     } 
     
    
-}
