@@ -48,81 +48,84 @@
 
 <body>
     <main>
-       
-                <div id="missionaryPage">
-                       
-                    <div id="missionarySuite">
-    <figure>
-        <img src="images/Amenities/suitekitchen400w.jpg" alt="kitchen">
-        <figcaption>Full Kitchens with Full-size Appliances</figcaption>
-    </figure>
-    
-    <figure>
-            <img src="images/Amenities/suite400w.jpg" alt="kitchen">
-            <figcaption>Spacious Open Floorplans</figcaption>
-        </figure>
-     
-        <figure>
-                <img src="images/Amenities/suiteliving400w.jpg" alt="kitchen">
-                <figcaption>Separate Comfortable Living Areas</figcaption>
-            </figure>
-        </div>
-        
-        <div>
-            <div id="suiteInfo">
-            <h1>Long-term Missionary Suites</h1>
-            <p>Full suites are available at each location for couples serving long-term temple missions.
-                These suites are one bedroom, one bathroom apartments with full kitchen and living areas.
-                Missionaries staying in the suites have full access to all hotel accommodations during their
-                stay. If you have been called to a temple mission at one of these locations, please contacts
-                with the form below for more information.
-            </p>
-        </div>
-        <div id= "missionaryForm" >
-        <h1>Contact us for more infomation</h1>
-        <h2>Fill out the form below:</h2>
-        <form method="get" action="missionarythanks.html">
 
-            <fieldset>
-                <legend>Missionary Information</legend>
-                <label class="top">First Name* <input type="text" name="fname" required></label>
-                <label class="top">Last Name* <input type="text" name="lname" required></label>
-                <label class="top">Phone* <input type="tel" name="phone" placeholder="1235551234" required></label>
-                <label class="top">Email* <input type="email" name="email" placeholder="someone@gmail.com" required></label>
-            
-            </fieldset>
-            <fieldset>
-                <legend>Mission Service</legend>
-                <label class="top">Start Date<input type="date" name="completedDate" required></label>
-                
-                <label class="top">Location
-                    <input list="location" name="location"required>
-                    <datalist id="location">
-                        <option value="Meridian Temple in Idaho">
-                        <option value="Salt Lake Temple in Utah">
-                        <option value="Nauvoo Temple in Illinois">
-                        <option value="Anchorage Temple in Alaska">
-                    </datalist>
-                </label>
-                
+        <div id="missionaryPage">
+
+            <div id="missionarySuite">
+                <figure>
+                    <img src="images/Amenities/suitekitchen400w.jpg" alt="kitchen">
+                    <figcaption>Full Kitchens with Full-size Appliances</figcaption>
+                </figure>
+
+                <figure>
+                    <img src="images/Amenities/suite400w.jpg" alt="kitchen">
+                    <figcaption>Spacious Open Floorplans</figcaption>
+                </figure>
+
+                <figure>
+                    <img src="images/Amenities/suiteliving400w.jpg" alt="kitchen">
+                    <figcaption>Separate Comfortable Living Areas</figcaption>
+                </figure>
+            </div>
+
+            <div>
+                <div id="suiteInfo">
+                    <h1>Long-term Missionary Suites</h1>
+                    <p>Full suites are available at each location for couples serving long-term temple missions.
+                        These suites are one bedroom, one bathroom apartments with full kitchen and living areas.
+                        Missionaries staying in the suites have full access to all hotel accommodations during their
+                        stay. If you have been called to a temple mission at one of these locations, please contacts
+                        with the form below for more information.
+                    </p>
+                </div>
+                <div id="missionaryForm">
+                    <h1>Contact us for more infomation</h1>
+                    <h2>Fill out the form below:</h2>
+                    <form method="get" action="missionarythanks.html">
+
+                        <fieldset>
+                            <legend>Missionary Information</legend>
+                            <label class="top">First Name* <input type="text" name="fname" required></label>
+                            <label class="top">Last Name* <input type="text" name="lname" required></label>
+                            <label class="top">Phone* <input type="tel" name="phone" placeholder="1235551234"
+                                    required></label>
+                            <label class="top">Email* <input type="email" name="email" placeholder="someone@gmail.com"
+                                    required></label>
+
+                        </fieldset>
+                        <fieldset>
+                            <legend>Mission Service</legend>
+                            <label class="top">Start Date<input type="date" name="completedDate" required></label>
+
+                            <label class="top">Location
+                                <input list="location" name="location" required>
+                                <datalist id="location">
+                                    <option value="Meridian Temple in Idaho">
+                                    <option value="Salt Lake Temple in Utah">
+                                    <option value="Nauvoo Temple in Illinois">
+                                    <option value="Anchorage Temple in Alaska">
+                                </datalist>
+                            </label>
 
 
-                <textarea rows="4" cols="35" name="comment" form="usrform" class="missionComments">
+
+                            <textarea rows="4" cols="35" name="comment" form="usrform" class="missionComments">
                    Questions or Comments:</textarea>
-            </fieldset>
+                        </fieldset>
 
-            <input type="submit" value="Request Information" class="submitBtn">
+                        <input type="submit" value="Request Information" class="submitBtn">
 
-        </form>
-        </div>
-    </div>
+                    </form>
+                </div>
+            </div>
     </main>
 
 </body>
 <section id="footer">
     <footer class="center">
         <p>
-            &copy; <span id="updateYear"></span> || Jenni Moody || CIT230
+            &copy; <span id="updateYear"></span> || Jenni Moody || CIT230 || <a id="resourceLink"
+                href="resources.html">Resources</a>
             <br>
             <span id="currentDay"></span>, <span id="currentDate"></span> <span id="currentMonth"></span>
             <span id="currentYear"></span>

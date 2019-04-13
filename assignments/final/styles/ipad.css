@@ -87,11 +87,20 @@
 }
 
 
-}
+
 .formImages img{
     margin: 0 2% 0 8%;
     width: 85%;
 }
+
+/*--------services------*/
+
+#information h2 {
+    font-size: 2em;
+}
+#serviceImages {
+    grid-template-columns: 1fr 1fr;
+} 
 
 
     /*--------contacts-----*/

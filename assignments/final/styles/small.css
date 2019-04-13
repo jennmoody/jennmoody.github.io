@@ -415,6 +415,33 @@ form label.top select:required:valid {
    
 }
 iframe {width: 100%; height: 300px;}
+/*--------thankyou---------*/
+.thankyou {
+    background-color: #fafbfd;
+    color: #86828C;
+    margin: 2%;
+    padding: 2%;
+}
+.thankyou p{
+    padding: 0 0 0 2%;
+}
+
+/*--------resources--------*/
+#resources {
+    background-color: #fafbfd;
+    color: #86828C;
+    margin: 2%;
+    padding: 2%
+
+}
+#resources p, h2 {
+    font-family: 'Montserrat', sans-serif;
+    padding: 0 0 0 2%;
+}
+#resourceLink {
+    text-decoration:none;
+    color: #fafbfd;
+}
 
 /*---------footer-------*/
 
@@ -426,10 +453,9 @@ iframe {width: 100%; height: 300px;}
 
 }
 
-@media screen and (max-width: 500px) {
-    #missionaryPage {
 
-    }
+@media screen and (max-width: 500px) {
+    
     header {
         height: 200px;
           
@@ -460,6 +486,12 @@ iframe {width: 100%; height: 300px;}
 .subMenu li{
     
     background-color: #cbcae3;
+}
+.subMenu {
+    display: block;
+    position: absolute;
+    
+
 }
 #missionarySuite img {
     width: 99%;

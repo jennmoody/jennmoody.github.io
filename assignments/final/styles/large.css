@@ -157,5 +157,7 @@ nav button {display: none;}
     grid-column-gap: 2em;
     margin: 2%;
 }
-
+#temples h2 {
+    font-size: 1.4em;
+}
 }
