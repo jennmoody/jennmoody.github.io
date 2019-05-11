@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Object Notes</title>
+</head>
+
+<body>
+    <h1>Week 3 Notes</h1>
+    <h2>Objects</h2>
+    <p>OOP is short for object-oriented programming</p>
+    <p>Suggested books on OOP: "Design Patterns: Elements
+        of Reusable Object-Oriented Software" by E. Gamma, R. Helm,
+        R. Johnson, J. Vissides or "Object-Oriented Analysis and Design
+        with Applications" by G. Booch.
+    </p>
+    <h3>Example 1 - Shorthand Object Literal</h3>
+    <p>// these objects do the same
+
+        let user = { <br>
+        sayHi: function() { <br>
+        alert("Hello"); <br>
+        } <br>
+        };<br>
+        <br>
+        // method shorthand looks better, right?<br>
+        let user = { <br>
+        sayHi() { // same as "sayHi: function()" <br>
+        alert("Hello"); <br>
+        }<br>
+        };<br>
+    </p>
+    <p>Most of the time shorter syntax is preferred.</p>
+    <h3>Example 2 - "this" method</h3>>
+    <p>"this" keyword can be used to access the object.<br>
+        The value is the object "before dot"</p>
+    <p>let user = { <br>
+        name: "John", <br>
+        age: 30, <br>
+        <br>
+        sayHi() { <br>
+        alert(this.name); <br>
+        } <br>
+        <br>
+        };<br>
+        <br>
+        user.sayHi(); // John
+    </p>
+    <h3>Summary</h3>
+    <ul>
+        <li>"Methods" are object properties where functions are stored</li>
+        <li>Methods allow objects to "act" like object.doSomething()</li>
+        <li>Methods can reference the object as "this"</li>
+    </ul>
+    <h3>Eloquent JavaScript Notes</h3>
+    <h4>Chapter 14</h4>
+    <p>DOM stands for Document Object Model</p>
+    <h3>Notes from W3schools</h3>
+    <h4>filter()</h4>
+    <p>The filter() method creates an array filled with all array elements that pass
+        a test (provided as a function). <br>
+        <br>
+        filter() does not execute the function for array elments without values
+        <br>
+        filter() does not change the original array.
+    </p>
+    <h4>map()</h4>
+    <p>The map() method creates a new array with the results of calling a function for
+        every array element.<br>
+        The map() method calls the provided function once for each element in an array, in order.
+        <br>
+        <br>
+        map() does not execute the function for array elements without values. <br>
+        map() does not change the original array.
+    </P>
+    <h4>sort()</h4>
+    <p>By default, the sort() function sorts values as strings<br>
+        Because of this, the sort() method will produce incorrect results when sorting numbers.<br>
+        You can fix this by providing a compare function.<br>
+        When the sort() function compares two values, it sends the values to the compare function, and sorts the values
+        according to the returned (negative, zero, positive) value.
+        <br>
+        If the result is negative a is sorted before b.
+        <br>
+        If the result is positive b is sorted before a.
+        <br>
+        If the result is 0 no changes is done with the sort order of the two values.
+    </p>
+
+
+
+
+</body>
+
+</html>

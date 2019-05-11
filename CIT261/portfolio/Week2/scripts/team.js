@@ -23,3 +23,14 @@ function count(startingNumber) {
     document.getElementById("div2").innerHTML = returnValue;
 
 }
+
+function addMachine() {
+    var firstNumber = parseFloat(document.getElementById('number1').value);
+    var secondNumber = parseFloat(document.getElementById('number2').value);
+    
+    var returnSum = firstNumber + secondNumber;
+
+    
+
+document.getElementById("div3").innerHTML = returnSum;
+}
